@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The marks scored by 10 students: 25, 29, 30, 33, 35, 37, 38, 40, 44, 48. Find the standard deviation.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since the mean (35.9) is not an integer, we use the assumed mean method with A = 35 and n = 10.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the deviations (dᵢ = xᵢ - 35) and their squares (dᵢ²) as shown in the table.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Sum the deviations (Σdᵢ = 9) and their squares (Σdᵢ² = 453).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Use the standard deviation formula for assumed mean method:</p><p>\[</p><p>\sigma = \sqrt{\frac{\Sigma d_i^2}{n} - \left(\frac{\Sigma d_i}{n}\right)^2} = \sqrt{\frac{453}{10} - \left(\frac{9}{10}\right)^2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Perform the calculations:</p><p>\[</p><p>= \sqrt{45.3 - 0.81} = \sqrt{44.49} \approx 6.67</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation is approximately 6.67.</p></div></div>
+</div>
+</body>
+</html>

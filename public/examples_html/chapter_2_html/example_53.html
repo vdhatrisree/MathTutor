@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A person saved money every year, half as much as he could in the previous year. If he had totally saved ₹7875 in 6 years, then how much did he save in the first year?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given information. The total amount saved in 6 years is \( S_6 = 7875 \), and the ratio of savings each year is \( r = \frac{1}{2} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the sum of a finite geometric series:</p><p>\[</p><p>S_n = \frac{a(1 - r^n)}{1 - r}</p><p>\]</p><p>where \( a \) is the first term (savings in the first year), \( r \) is the common ratio, and \( n \) is the number of years.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula:</p><p>\[</p><p>7875 = \frac{a \left(1 - \left(\frac{1}{2}\right)^6\right)}{1 - \frac{1}{2}}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the equation:</p><p>\[</p><p>7875 = \frac{a \left(1 - \frac{1}{64}\right)}{\frac{1}{2}} = \frac{a \left(\frac{63}{64}\right)}{\frac{1}{2}} = a \left(\frac{63}{32}\right)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \( a \):</p><p>\[</p><p>a = 7875 \times \frac{32}{63} = 4000</p><p>\]</p></div></div><div class="final-answer"><p>The amount saved in the first year is ₹4000.</p></div></div>
+</div>
+</body>
+</html>

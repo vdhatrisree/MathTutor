@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Marks of the students in a particular subject of a class are given below. Find its standard deviation.</p><p>Marks</p><p>0-10</p><p>10-20</p><p>20-30</p><p>30-40</p><p>40-50</p><p>50-60</p><p>60-70</p><p>Frequency (f)</p><p>8</p><p>12</p><p>17</p><p>14</p><p>9</p><p>7</p><p>4</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the mid values, deviations, and squared deviations for each class interval. Assume mean \( A = 35 \) and class width \( c = 10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the standard deviation formula for grouped data:</p><p>\[</p><p>\sigma = c \times \sqrt{ \frac{\Sigma f_i u_i^2}{N} - \left( \frac{\Sigma f_i u_i}{N} \right)^2 }</p><p>\]</p><p>where \( N = 71 \), \( \Sigma f_i u_i = -30 \), and \( \Sigma f_i u_i^2 = 210 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values into the formula:</p><p>\[</p><p>\sigma = 10 \times \sqrt{ \frac{210}{71} - \left( \frac{-30}{71} \right)^2 }</p><p>\]</p><p>\[</p><p>\sigma = 10 \times \sqrt{ 2.9577 - 0.1786 }</p><p>\]</p><p>\[</p><p>\sigma = 10 \times \sqrt{2.7791}</p><p>\]</p><p>\[</p><p>\sigma \approx 10 \times 1.667</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation is approximately \( 16.67 \).</p></div></div>
+</div>
+</body>
+</html>

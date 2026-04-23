@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In a Geometric progression, the 4</p><p>th</p><p>term is \(\frac{8}{243}\) and the 7</p><p>th</p><p>term is \(\frac{64}{729}\). Find the Geometric Progression.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Write the expressions for the 4</p><p>th</p><p>and 7</p><p>th</p><p>terms using the formula for the \(n\)-th term of a GP, \(t_n = ar^{n-1}\).</p><p>For the 4</p><p>th</p><p>term:</p><p>\(t_4 = ar^3 = \frac{8}{243}\) ...(1)</p><p>For the 7</p><p>th</p><p>term:</p><p>\(t_7 = ar^6 = \frac{64}{729}\) ...(2)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Divide equation (2) by equation (1) to eliminate \(a\) and solve for \(r\).</p><p>\(\frac{ar^6}{ar^3} = \frac{\frac{64}{729}}{\frac{8}{243}}\)</p><p>Simplify:</p><p>\(r^3 = \frac{64}{729} \times \frac{243}{8} = \frac{8}{27}\)</p><p>Take the cube root:</p><p>\(r = \frac{2}{3}\)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute \(r = \frac{2}{3}\) back into equation (1) to find \(a\).</p><p>\(a \left(\frac{2}{3}\right)^3 = \frac{8}{243}\)</p><p>Calculate \(\left(\frac{2}{3}\right)^3\):</p><p>\(a \cdot \frac{8}{27} = \frac{8}{243}\)</p><p>Solve for \(a\):</p><p>\(a = \frac{8}{243} \times \frac{27}{8} = \frac{27}{8}\)</p></div></div><div class="final-answer"><p>The Geometric Progression is \(\frac{27}{8}, \frac{9}{8}, \frac{3}{8}, \dots\)</p></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that:</p><p>\[</p><p>\tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the left-hand side (LHS) and express \(\tan^2 A\) and \(\tan^2 B\) in terms of \(\sin\) and \(\cos\):</p><p>\[</p><p>\tan^2 A - \tan^2 B = \frac{\sin^2 A}{\cos^2 A} - \frac{\sin^2 B}{\cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Combine the fractions into a single fraction:</p><p>\[</p><p>= \frac{\sin^2 A \cos^2 B - \sin^2 B \cos^2 A}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the Pythagorean identity \(\cos^2 x = 1 - \sin^2 x\) to rewrite the \(\cos^2\) terms:</p><p>\[</p><p>= \frac{\sin^2 A (1 - \sin^2 B) - \sin^2 B (1 - \sin^2 A)}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Expand the numerator:</p><p>\[</p><p>= \frac{\sin^2 A - \sin^2 A \sin^2 B - \sin^2 B + \sin^2 A \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the numerator by canceling the \(\sin^2 A \sin^2 B\) terms:</p><p>\[</p><p>= \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="final-answer"><p>The simplified form matches the right-hand side (RHS), proving the identity:</p><p>\[</p><p>\tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div>
+</div>
+</body>
+</html>

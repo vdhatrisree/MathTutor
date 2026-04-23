@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The present value of a machine is ₹40,000 and its value depreciates each year by 10%. Find the estimated value of the machine in the 6th year.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The initial value of the machine is ₹40,000, and it depreciates at 10% per year. This means each year the value becomes 90% of its previous value.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The depreciation follows a geometric progression (G.P.) with first term \( a = 40,000 \) and common ratio \( r = 0.90 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>To find the value in the 6th year, we calculate the 6th term of the G.P. using the formula:</p><p>\[ t_n = ar^{n-1} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \( n = 6 \), \( a = 40,000 \), and \( r = 0.90 \):</p><p>\[ t_6 = 40,000 \times (0.90)^{5} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Compute the calculation:</p><p>\[ t_6 = 40,000 \times 0.59049 = 23,619.6 \]</p></div></div><div class="final-answer"><p>The estimated value of the machine in the 6th year is ₹23,619.60.</p></div></div>
+</div>
+</body>
+</html>

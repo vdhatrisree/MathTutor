@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If A and B are two events such that P(A) = \(\frac{1}{4}\), P(B) = \(\frac{1}{2}\) and P(A and B) = \(\frac{1}{8}\), find (i) P(A or B) (ii) P(not A and not B).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>To find P(A or B), we use the formula for the probability of the union of two events.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula is \(P(A \cup B) = P(A) + P(B) - P(A \cap B)\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substituting the given values:</p><p>\(P(A \cup B) = \frac{1}{4} + \frac{1}{2} - \frac{1}{8} = \frac{2}{8} + \frac{4}{8} - \frac{1}{8} = \frac{5}{8}\).</p></div></div><div class="final-answer"><p>(i) \(P(A \text{ or } B) = \frac{5}{8}\).</p><p>Step 1: To find P(not A and not B), we use the complement of the union of A and B.</p><p>Step 2: The formula is \(P(\overline{A} \cap \overline{B}) = 1 - P(A \cup B)\).</p><p>Step 3: Substituting the previously calculated value:</p><p>\(P(\overline{A} \cap \overline{B}) = 1 - \frac{5}{8} = \frac{3}{8}\).</p></div><div class="final-answer"><p>(ii) \(P(\text{not A and not B}) = \frac{3}{8}\).</p></div></div>
+</div>
+</body>
+</html>

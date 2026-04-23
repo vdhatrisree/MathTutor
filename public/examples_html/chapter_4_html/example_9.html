@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Two poles of height ‘a’ metres and ‘b’ metres are ‘p’ metres apart. Prove that the height of the point of intersection of the lines joining the top of each pole to the foot of the opposite pole is given by \(\frac{ab}{a+b}\) metres.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AB and CD be two poles of height ‘a’ metres and ‘b’ metres respectively, placed ‘p’ metres apart (AC = p). Let the lines AD and BC intersect at point O, with OL = h metres being the height of the intersection point.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Assign CL = x and LA = y, so \(x + y = p\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>In \(\triangle ABC\) and \(\triangle LOC\), \(\angle CAB = \angle CLO = 90°\). By AA similarity, \(\triangle CAB \sim \triangle CLO\).</p><p>Using the similarity ratio: \(\frac{CA}{CL} = \frac{AB}{LO}\), we get \(\frac{p}{x} = \frac{a}{h}\). Solving for \(x\) gives \(x = \frac{ph}{a}\) (Equation 1).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>In \(\triangle ALO\) and \(\triangle ACD\), \(\angle ALO = \angle ACD = 90°\) and \(\angle A\) is common. By AA similarity, \(\triangle ALO \sim \triangle ACD\).</p><p>Using the similarity ratio: \(\frac{AL}{AC} = \frac{OL}{DC}\), we get \(\frac{y}{p} = \frac{h}{b}\). Solving for \(y\) gives \(y = \frac{ph}{b}\) (Equation 2).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Add Equations 1 and 2: \(x + y = \frac{ph}{a} + \frac{ph}{b}\). Since \(x + y = p\), substitute to get \(p = ph \left(\frac{1}{a} + \frac{1}{b}\right)\).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Simplify the equation: \(\frac{1}{h} = \frac{1}{a} + \frac{1}{b}\).</p></div></div><div class="final-answer"><p>Solving for \(h\) gives the height of the intersection point as \(h = \frac{ab}{a + b}\) metres.</p></div></div>
+</div>
+</body>
+</html>

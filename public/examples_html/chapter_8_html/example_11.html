@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>48 students reported their weekly TV watching hours. Find the standard deviation.</p><p>Hours (x)</p><p>6</p><p>7</p><p>8</p><p>9</p><p>10</p><p>11</p><p>12</p><p>Students (f)</p><p>3</p><p>6</p><p>9</p><p>13</p><p>8</p><p>5</p><p>4</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the mean (\(\bar{x}\)) using the formula \(\bar{x} = \frac{\sum x_i f_i}{N}\).</p><p>\[</p><p>\bar{x} = \frac{432}{48} = 9 \text{ hours}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute the deviations \(d_i = x_i - \bar{x}\) and their squares \(d_i^2\), then find \(f_i d_i^2\).</p><p>xᵢ</p><p>fᵢ</p><p>xᵢfᵢ</p><p>dᵢ = xᵢ - x̄</p><p>dᵢ²</p><p>fᵢdᵢ²</p><p>6</p><p>3</p><p>18</p><p>-3</p><p>9</p><p>27</p><p>7</p><p>6</p><p>42</p><p>-2</p><p>4</p><p>24</p><p>8</p><p>9</p><p>72</p><p>-1</p><p>1</p><p>9</p><p>9</p><p>13</p><p>117</p><p>0</p><p>0</p><p>0</p><p>10</p><p>8</p><p>80</p><p>1</p><p>1</p><p>8</p><p>11</p><p>5</p><p>55</p><p>2</p><p>4</p><p>20</p><p>12</p><p>4</p><p>48</p><p>3</p><p>9</p><p>36</p><p>Total</p><p>432</p><p>124</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the standard deviation (\(\sigma\)) using the formula \(\sigma = \sqrt{\frac{\sum f_i d_i^2}{N}}\).</p><p>\[</p><p>\sigma = \sqrt{\frac{124}{48}} = \sqrt{2.58} \approx 1.6 \text{ hours}</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation is approximately \(1.6\) hours.</p></div></div>
+</div>
+</body>
+</html>

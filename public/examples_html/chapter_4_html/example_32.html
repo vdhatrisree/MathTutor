@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that in a triangle, the medians are concurrent.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Recall that medians are line segments joining each vertex to the midpoint of the corresponding opposite sides. Let D, E, F be the midpoints of sides BC, CA, and AB respectively.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Since D is the midpoint of BC, BD = DC. Therefore, the ratio \(\frac{BD}{DC} = 1\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Similarly, since E is the midpoint of CA, CE = EA. Thus, the ratio \(\frac{CE}{EA} = 1\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Also, since F is the midpoint of AB, AF = FB. Hence, the ratio \(\frac{AF}{FB} = 1\).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Multiply the three ratios obtained in Steps 2, 3, and 4:</p><p>\[</p><p>\frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1 \cdot 1 \cdot 1 = 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>By Ceva’s theorem, if the product of the ratios is 1, the cevians (in this case, the medians) are concurrent.</p></div></div><div class="final-answer"><p>The medians of a triangle are concurrent.</p></div></div>
+</div>
+</body>
+</html>

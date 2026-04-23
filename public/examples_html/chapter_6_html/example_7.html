@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
+<script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that $\sin^2A \cos^2B + \cos^2A \sin^2B + \cos^2A \cos^2B + \sin^2A \sin^2B = 1$.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Rearrange the terms for easier grouping.</p><p>$\sin^2A \cos^2B + \cos^2A \sin^2B + \cos^2A \cos^2B + \sin^2A \sin^2B$</p><p>$= \sin^2A \cos^2B + \sin^2A \sin^2B + \cos^2A \sin^2B + \cos^2A \cos^2B$</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Factor out common terms.</p><p>$= \sin^2A (\cos^2B + \sin^2B) + \cos^2A (\sin^2B + \cos^2B)$</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Apply the Pythagorean identity $\sin^2\theta + \cos^2\theta = 1$.</p><p>$= \sin^2A (1) + \cos^2A (1)$</p><p>$= \sin^2A + \cos^2A$</p><p>$= 1$</p></div></div><div class="final-answer"><p>$1$</p></div></div>
+</div>
+</body>
+</html>
