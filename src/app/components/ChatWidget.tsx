@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MessageCircle, X, Send, Sparkles, Loader2, Bot, User } from "lucide-react";
 import { useChatContext } from "../context/chat-context";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
   role: "user" | "model";
@@ -171,18 +173,34 @@ export function ChatWidget() {
                   {msg.role === "user" ? <User className="w-5 h-5" /> : <Bot className="w-5 h-5" />}
                 </div>
                 <div
-                  className={`p-3 rounded-2xl ${
+                  className={`p-3 rounded-2xl text-sm ${
                     msg.role === "user"
                       ? "bg-blue-600 text-white rounded-tr-sm"
-                      : "bg-white border border-gray-200 text-gray-800 rounded-tl-sm shadow-sm"
+                      : "bg-white border border-gray-200 text-gray-800 rounded-tl-sm shadow-sm markdown-body"
                   }`}
-                  style={{
-                    wordBreak: "break-word",
-                  }}
-                  dangerouslySetInnerHTML={{
-                    __html: msg.content.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br/>'),
-                  }}
-                />
+                  style={{ wordBreak: "break-word" }}
+                >
+                  {msg.role === "user" ? (
+                    msg.content
+                  ) : (
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        h1: ({node, ...props}) => <h1 className="text-xl font-bold mt-4 mb-2" {...props} />,
+                        h2: ({node, ...props}) => <h2 className="text-lg font-bold mt-3 mb-1.5" {...props} />,
+                        h3: ({node, ...props}) => <h3 className="text-md font-bold mt-2 mb-1" {...props} />,
+                        h4: ({node, ...props}) => <h4 className="text-sm font-bold mt-2 mb-1" {...props} />,
+                        p: ({node, ...props}) => <p className="mb-2 last:mb-0 leading-relaxed" {...props} />,
+                        ul: ({node, ...props}) => <ul className="list-disc pl-5 mb-2" {...props} />,
+                        ol: ({node, ...props}) => <ol className="list-decimal pl-5 mb-2" {...props} />,
+                        li: ({node, ...props}) => <li className="mb-1" {...props} />,
+                        strong: ({node, ...props}) => <strong className="font-semibold text-gray-900" {...props} />
+                      }}
+                    >
+                      {msg.content.replace(/^\\?#{1,6}\s+(.*)$/gm, '**$1**')}
+                    </ReactMarkdown>
+                  )}
+                </div>
               </div>
             ))}
             
