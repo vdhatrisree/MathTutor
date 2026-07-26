@@ -3,6 +3,7 @@ import path from "path";
 import { notFound } from "next/navigation";
 import type { JSX } from "react";
 import Link from "next/link";
+import { ChatContextSetter } from "../../../../../components/ChatContextSetter";
 import MathJaxRenderer from "../../../../../components/MathJaxRenderer";
 import data from "../../../../../../../public/content_index.json";
 
@@ -118,6 +119,7 @@ export default async function QuestionDisplayPage({ params }: QuestionPageProps)
 
   return (
     <main className="bg-gray-50 min-h-screen">
+      <ChatContextSetter title={`${chapterTitle} - ${exerciseSet} - ${questionId}`} htmlContent={fileContent} />
       <div className="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8 pb-28">
         <header className="mb-8">
           <div className="flex items-center gap-4 md:block">
