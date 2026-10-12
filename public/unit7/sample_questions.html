@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 7 – Sample Questions | Mensuration</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.8;color:var(--text);font-family:'JetBrains Mono',monospace;white-space:pre-wrap}
+.answer.show{display:block}
+.diff-1{border-left:3px solid var(--green)}.diff-2{border-left:3px solid var(--accent)}.diff-3{border-left:3px solid var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 7</span>
+  <span style="font-size:.85rem;font-weight:600">Mensuration</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 7 — Sample Questions</h1>
+  <p class="meta">π = 22/7 unless stated · Click "Show Answer" · Green = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Cylinder, Cone &amp; Sphere</h2>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">Find the CSA and TSA of a cylinder with radius 7 cm and height 10 cm.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">CSA = 2πrh = 2 × 22/7 × 7 × 10 = 440 cm²
+TSA = 2πr(r+h) = 2 × 22/7 × 7 × (7+10) = 2 × 22 × 17 = 748 cm²</div>
+    </div>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">Find the volume of a cone with radius 6 cm and height 7 cm.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">V = (1/3)πr²h = (1/3) × 22/7 × 36 × 7
+= (1/3) × 22 × 36 = 264 cm³</div>
+    </div>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">Find the surface area and volume of a sphere of radius 7 cm.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">SA = 4πr² = 4 × 22/7 × 49 = 616 cm²
+V  = (4/3)πr³ = (4/3) × 22/7 × 343 = 4 × 22 × 49/3 ≈ 1437.3 cm³</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">Find the TSA of a hemisphere of radius 7 cm.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">TSA = 3πr² = 3 × 22/7 × 49 = 3 × 22 × 7 = 462 cm²</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">A cone has radius 5 cm and height 12 cm. Find its slant height and CSA.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">l = √(r²+h²) = √(25+144) = √169 = 13 cm
+CSA = πrl = 22/7 × 5 × 13 = 1430/7 ≈ 204.3 cm²</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Frustum &amp; Combined Solids</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Find the volume of a frustum with R = 10 cm, r = 5 cm, h = 9 cm.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">V = (πh/3)(R² + r² + Rr)
+= (22/7 × 9/3)(100 + 25 + 50)
+= (22/7 × 3)(175)
+= 22 × 75 = 1650 cm³</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">A toy is in the shape of a hemisphere surmounted by a cone, both of radius 3.5 cm. Height of cone = 4 cm. Find the total volume.</span><span class="marks">4 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">r = 3.5 cm
+Volume of hemisphere = (2/3)πr³ = (2/3) × 22/7 × 42.875 = 89.83 cm³
+Volume of cone = (1/3)πr²h = (1/3) × 22/7 × 12.25 × 4 = 51.33 cm³
+Total = 89.83 + 51.33 = 141.17 cm³  ≈  141.2 cm³</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Conversion of Solids</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">A solid sphere of radius 3 cm is melted and recast into a cone of radius 3 cm. Find the height of the cone.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Volume of sphere = Volume of cone
+(4/3)πr³ = (1/3)πr²h
+(4/3)π(27) = (1/3)π(9)h
+36π = 3πh
+h = 12 cm</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">How many small spheres of radius 1 cm can be made from a large sphere of radius 4 cm?</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">n = (R/r)³ = (4/1)³ = 64 spheres</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">A metallic cube of side 6 cm is melted and cast into a cylinder of radius 3 cm. Find the height of the cylinder.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Volume of cube = Volume of cylinder
+6³ = πr²h
+216 = 22/7 × 9 × h
+h = 216 × 7 / (22 × 9) = 1512/198 ≈ 7.64 cm</div>
+    </div>
+  </section>
+</div>
+<script>function toggle(btn){const a=btn.nextElementSibling;a.classList.toggle('show');btn.textContent=a.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';}</script>
+</body>
+</html>

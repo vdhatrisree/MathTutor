@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 2 – Sample Questions | Numbers and Sequences</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;gap:0;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-toggle{margin-top:10px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.75;color:var(--text)}
+.answer.show{display:block}
+.answer b{color:var(--green)}
+code{font-family:'JetBrains Mono',monospace;font-size:.87em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+.diff-1{border-left:3px solid var(--green)}
+.diff-2{border-left:3px solid var(--accent)}
+.diff-3{border-left:3px solid var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 2</span>
+  <span style="font-size:.85rem;font-weight:600">Numbers and Sequences</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 2 — Sample Questions</h1>
+  <p class="meta">Click "Show Answer" to reveal the solution · Green border = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Euclid's Algorithm &amp; HCF/LCM</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">Find HCF(48, 18) using Euclid's Division Algorithm.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Apply Euclid's Division Lemma repeatedly:<br>
+        Step 1: 48 = 18 × 2 + 12<br>
+        Step 2: 18 = 12 × 1 + 6<br>
+        Step 3: 12 = 6 × 2 + 0<br>
+        Remainder = 0, so <b>HCF(48, 18) = 6</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">The HCF of two numbers is 6 and their product is 216. Find the LCM.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Using the formula: LCM × HCF = Product of two numbers<br>
+        LCM × 6 = 216<br>
+        <b>LCM = 216 ÷ 6 = 36</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Arithmetic Progression</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">Find the 10th term of the AP: 2, 5, 8, 11, …</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        First term a = 2, Common difference d = 5 − 2 = 3<br>
+        nth term formula: aₙ = a + (n − 1)d<br>
+        a₁₀ = 2 + (10 − 1) × 3 = 2 + 27 = <b>29</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">Find the sum of the first 20 terms of the AP: 3, 7, 11, …</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 3, d = 7 − 3 = 4, n = 20<br>
+        Sₙ = n/2 × [2a + (n − 1)d]<br>
+        S₂₀ = 20/2 × [2(3) + (20 − 1)(4)]<br>
+        S₂₀ = 10 × [6 + 76]<br>
+        S₂₀ = 10 × 82 = <b>820</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Geometric Progression</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">Find the 5th term of the GP: 2, 6, 18, …</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 2, r = 6 ÷ 2 = 3<br>
+        nth term formula: aₙ = a · rⁿ⁻¹<br>
+        a₅ = 2 × 3⁴ = 2 × 81 = <b>162</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Find the sum of the first 6 terms of the GP: 1, 2, 4, 8, …</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 1, r = 2, n = 6<br>
+        Sₙ = a(rⁿ − 1) / (r − 1)<br>
+        S₆ = 1 × (2⁶ − 1) / (2 − 1)<br>
+        S₆ = (64 − 1) / 1 = <b>63</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Special Sum Formulas</h2>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">Find the sum of the first 15 natural numbers.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Using the formula: Σn = n(n + 1) / 2<br>
+        Sum = 15 × 16 / 2 = 240 / 2 = <b>120</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">Find the sum of the squares of the first 5 natural numbers.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Using the formula: Σn² = n(n + 1)(2n + 1) / 6<br>
+        Sum = 5 × 6 × 11 / 6 = 330 / 6 = <b>55</b><br>
+        Verify: 1² + 2² + 3² + 4² + 5² = 1 + 4 + 9 + 16 + 25 = 55 ✓
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Advanced Problems</h2>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">The 7th term of an AP is 40 and the 13th term is 70. Find the AP (first term and common difference).</span><span class="marks">4 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Let first term = a, common difference = d<br>
+        7th term: a + 6d = 40 … (1)<br>
+        13th term: a + 12d = 70 … (2)<br>
+        Subtract (1) from (2): 6d = 30 → <b>d = 5</b><br>
+        Substitute in (1): a + 30 = 40 → <b>a = 10</b><br>
+        The AP is: <b>10, 15, 20, 25, 30, 35, 40, …</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">In a GP, the 3rd term is 24 and the 6th term is 192. Find the first term and common ratio.</span><span class="marks">4 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Let first term = a, common ratio = r<br>
+        3rd term: ar² = 24 … (1)<br>
+        6th term: ar⁵ = 192 … (2)<br>
+        Divide (2) by (1): r³ = 192/24 = 8 → <b>r = 2</b><br>
+        Substitute in (1): a × 4 = 24 → <b>a = 6</b><br>
+        The GP is: <b>6, 12, 24, 48, 96, 192, …</b>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+function toggle(btn){
+  const ans=btn.parentElement.nextElementSibling;
+  ans.classList.toggle('show');
+  btn.textContent=ans.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';
+}
+</script>
+</body>
+</html>

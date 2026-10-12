@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 4 – Sample Questions | Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;gap:0;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-toggle{margin-top:10px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.75;color:var(--text)}
+.answer.show{display:block}
+.answer b{color:var(--green)}
+code{font-family:'JetBrains Mono',monospace;font-size:.87em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+.diff-1{border-left:3px solid var(--green)}
+.diff-2{border-left:3px solid var(--accent)}
+.diff-3{border-left:3px solid var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 4</span>
+  <span style="font-size:.85rem;font-weight:600">Geometry</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 4 — Sample Questions</h1>
+  <p class="meta">Click "Show Answer" to reveal the solution · Green border = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Basic Proportionality Theorem</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">In △ABC, DE ∥ BC. If AD = 4 cm, DB = 6 cm, and AE = 5 cm, find EC.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        By the Basic Proportionality Theorem (DE ∥ BC):<br>
+        AD/DB = AE/EC<br>
+        4/6 = 5/EC<br>
+        EC = (5 × 6) / 4 = 30/4 = <b>7.5 cm</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">In △PQR, a line DE is drawn such that PD = 3, DQ = 4.5, PE = 4, ER = 6. Is DE ∥ QR? Justify.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Check if PD/DQ = PE/ER:<br>
+        PD/DQ = 3/4.5 = 2/3<br>
+        PE/ER = 4/6 = 2/3<br>
+        Since PD/DQ = PE/ER = 2/3, by the <b>converse of BPT, DE ∥ QR</b>. ✓
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Similar Triangles</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">In △ABC and △DEF, ∠A = ∠D = 50° and ∠B = ∠E = 70°. Are the triangles similar? If △ABC ~ △DEF and AB = 6 cm, DE = 4 cm, find BC if EF = 3 cm.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        ∠A = ∠D and ∠B = ∠E, so by <b>AA criterion, △ABC ~ △DEF</b>.<br>
+        Since the triangles are similar: AB/DE = BC/EF<br>
+        6/4 = BC/3<br>
+        BC = (6 × 3) / 4 = 18/4 = <b>4.5 cm</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">△ABC ~ △DEF. The areas of △ABC and △DEF are 64 cm² and 25 cm² respectively. If BC = 8 cm, find EF.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        For similar triangles: Area(△ABC)/Area(△DEF) = (BC/EF)²<br>
+        64/25 = (8/EF)²<br>
+        (8/EF)² = 64/25<br>
+        8/EF = 8/5<br>
+        EF = (8 × 5)/8 = <b>5 cm</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pythagoras Theorem</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">In a right-angled triangle, the two legs are 5 cm and 12 cm. Find the hypotenuse.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        By Pythagoras Theorem: c² = a² + b²<br>
+        c² = 5² + 12² = 25 + 144 = 169<br>
+        c = √169 = <b>13 cm</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Check if a triangle with sides 7 cm, 24 cm, and 25 cm is a right-angled triangle.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Check the converse of Pythagoras: a² + b² = c²?<br>
+        7² + 24² = 49 + 576 = 625<br>
+        25² = 625<br>
+        Since 7² + 24² = 25², by the converse of Pythagoras Theorem, <b>the triangle is right-angled</b> (right angle opposite the 25 cm side).
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tangents to a Circle</h2>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">From a point P outside a circle, the distance to the centre O is 13 cm. If the radius is 5 cm, find the length of the tangent from P to the circle.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Using the tangent length formula: t = √(d² − r²)<br>
+        t = √(13² − 5²) = √(169 − 25) = √144 = <b>12 cm</b><br>
+        The tangent length is 12 cm.
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">Two tangents PA and PB are drawn from an external point P to a circle with centre O. If PA = 10 cm, find PB. Also find ∠OAP if OP = 26 cm.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Since tangents from an external point are equal: <b>PB = PA = 10 cm</b><br><br>
+        For ∠OAP: OA ⊥ PA (radius ⊥ tangent), so △OAP is right-angled at A.<br>
+        OA² = OP² − PA² = 26² − 10² = 676 − 100 = 576<br>
+        OA = 24 cm (radius)<br>
+        <b>∠OAP = 90°</b> (tangent is perpendicular to radius at point of contact)
+      </div>
+    </div>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">AB is a diameter of a circle with centre O. C is a point on the circle. If ∠BAC = 35°, find ∠ABC and ∠ACB.</span><span class="marks">4 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Since AB is a diameter, by the <b>Angle in a Semicircle theorem</b>:<br>
+        <b>∠ACB = 90°</b> (angle in semicircle)<br><br>
+        In △ABC: ∠BAC + ∠ABC + ∠ACB = 180°<br>
+        35° + ∠ABC + 90° = 180°<br>
+        ∠ABC = 180° − 125° = <b>55°</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">In △ABC, right-angled at B, a circle is inscribed with centre O and radius r. If AB = 3 cm, BC = 4 cm, AC = 5 cm, find the radius of the inscribed circle.</span><span class="marks">5 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        For a right-angled triangle with legs a and b and hypotenuse c:<br>
+        Inradius r = (a + b − c) / 2<br>
+        r = (AB + BC − AC) / 2<br>
+        r = (3 + 4 − 5) / 2<br>
+        r = 2/2 = <b>1 cm</b><br><br>
+        Alternatively, using Area method:<br>
+        Area of △ABC = (1/2) × 3 × 4 = 6 cm²<br>
+        Semi-perimeter s = (3 + 4 + 5)/2 = 6<br>
+        Area = r × s → 6 = r × 6 → r = 1 cm ✓
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+function toggle(btn){
+  const ans=btn.parentElement.nextElementSibling;
+  ans.classList.toggle('show');
+  btn.textContent=ans.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 4 – Theory | Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}
+.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:14px}
+h3{font-size:.95rem;font-weight:600;margin-bottom:8px;margin-top:16px}
+p{font-size:.92rem;line-height:1.75;color:var(--text);margin-bottom:10px}
+ul,ol{padding-left:20px;margin-bottom:10px}
+li{font-size:.92rem;line-height:1.75;margin-bottom:3px}
+.defn-box{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.defn-box .term{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:.9rem}
+.defn-box p{margin:0;font-size:.88rem}
+.highlight{background:var(--accent-l);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:.9rem}
+.example-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:10px 0;font-size:.88rem}
+.example-box .ex-label{font-size:.75rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+code{font-family:'JetBrains Mono',monospace;font-size:.88em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+table.def-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:10px 0}
+table.def-table th{background:var(--accent);color:#fff;padding:8px 12px;text-align:left}
+table.def-table th:first-child{border-radius:7px 0 0 0}table.def-table th:last-child{border-radius:0 7px 0 0}
+table.def-table td{padding:8px 12px;border-bottom:1px solid var(--border)}
+table.def-table tr:last-child td{border:none}
+table.def-table tr:nth-child(even) td{background:var(--surface2)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 4</span>
+  <span style="font-size:.85rem;font-weight:600">Geometry</span>
+  <div class="sibling-nav">
+    <a class="sn-btn active" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 4 — Geometry</h1>
+  <p class="meta">Class 10 · Tamil Nadu Samacheer Kalvi Mathematics</p>
+
+  <section>
+    <h2>1. Similar Triangles</h2>
+    <div class="defn-box">
+      <div class="term">Similar Triangles</div>
+      <p>Two triangles are <strong>similar</strong> if their corresponding angles are equal and their corresponding sides are proportional. If △ABC ~ △DEF, then ∠A = ∠D, ∠B = ∠E, ∠C = ∠F and AB/DE = BC/EF = CA/FD.</p>
+    </div>
+    <h3>Criteria for Similarity</h3>
+    <table class="def-table">
+      <thead><tr><th>Criterion</th><th>Condition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>AA (Angle-Angle)</strong></td><td>If two angles of one triangle are equal to two angles of another triangle, the triangles are similar.</td></tr>
+        <tr><td><strong>SAS (Side-Angle-Side)</strong></td><td>If one angle is equal and the sides including that angle are proportional, the triangles are similar.</td></tr>
+        <tr><td><strong>SSS (Side-Side-Side)</strong></td><td>If all three pairs of corresponding sides are proportional, the triangles are similar.</td></tr>
+      </tbody>
+    </table>
+    <div class="highlight"><strong>Key property:</strong> If △ABC ~ △DEF with ratio k, then: Area(△ABC)/Area(△DEF) = k² (ratio of areas = square of the ratio of corresponding sides).</div>
+  </section>
+
+  <section>
+    <h2>2. Basic Proportionality Theorem (Thales' Theorem)</h2>
+    <div class="defn-box">
+      <div class="term">Basic Proportionality Theorem (BPT)</div>
+      <p>If a line is drawn parallel to one side of a triangle intersecting the other two sides at distinct points, then the other two sides are divided in the same ratio.</p>
+      <p>In △ABC, if DE ∥ BC and DE intersects AB at D and AC at E, then:<br>
+      <strong>AD/DB = AE/EC</strong></p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Converse of BPT</div>
+      <p>If a line divides two sides of a triangle in the same ratio, then the line is parallel to the third side.</p>
+      <p>If AD/DB = AE/EC, then DE ∥ BC.</p>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      In △ABC, DE ∥ BC. If AD = 3, DB = 5, AE = 4, find EC.<br>
+      AD/DB = AE/EC → 3/5 = 4/EC → EC = 20/3
+    </div>
+    <div class="highlight">BPT is also called the <strong>Midpoint Theorem</strong> when the line passes through the midpoints (AD = DB), in which case DE = BC/2 and DE ∥ BC.</div>
+  </section>
+
+  <section>
+    <h2>3. Pythagoras Theorem</h2>
+    <div class="defn-box">
+      <div class="term">Pythagoras Theorem</div>
+      <p>In a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.</p>
+      <p>If ∠C = 90°, then <strong>AB² = BC² + AC²</strong>, or equivalently <strong>c² = a² + b²</strong>.</p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Converse of Pythagoras Theorem</div>
+      <p>If in a triangle, the square of one side equals the sum of squares of the other two sides, then the angle opposite the longest side is a right angle.</p>
+      <p>If c² = a² + b², then the triangle is right-angled with ∠C = 90°.</p>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Pythagorean Triples (common ones)</div>
+      (3, 4, 5): 3² + 4² = 9 + 16 = 25 = 5²<br>
+      (5, 12, 13): 5² + 12² = 25 + 144 = 169 = 13²<br>
+      (8, 15, 17): 8² + 15² = 64 + 225 = 289 = 17²
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Circles — Key Terms</h2>
+    <table class="def-table">
+      <thead><tr><th>Term</th><th>Definition</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Chord</strong></td><td>A line segment joining any two points on the circle</td></tr>
+        <tr><td><strong>Diameter</strong></td><td>The longest chord passing through the centre</td></tr>
+        <tr><td><strong>Arc</strong></td><td>A part of the circumference of the circle</td></tr>
+        <tr><td><strong>Tangent</strong></td><td>A line that touches the circle at exactly one point (point of tangency)</td></tr>
+        <tr><td><strong>Secant</strong></td><td>A line that intersects the circle at two points</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>5. Tangent to a Circle</h2>
+    <div class="defn-box">
+      <div class="term">Tangent–Radius Perpendicularity</div>
+      <p>The tangent to a circle at any point is <strong>perpendicular to the radius</strong> drawn to the point of tangency.<br>
+      If PT is a tangent to a circle with centre O at point T, then OT ⊥ PT.</p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Tangents from an External Point</div>
+      <p>The lengths of the two tangents drawn from an external point to a circle are <strong>equal</strong>.<br>
+      If PA and PB are tangents from external point P to a circle with centre O, then PA = PB.</p>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Length of Tangent from External Point</div>
+      If d = distance from external point P to centre O, and r = radius:<br>
+      <strong>Length of tangent t = √(d² − r²)</strong><br>
+      This follows from the right triangle OTP where OT = r, OP = d, PT = t.
+    </div>
+    <div class="highlight">Since OT ⊥ PT, the triangle OTP is right-angled at T, giving us OP² = OT² + PT², hence PT = √(OP² − OT²).</div>
+  </section>
+
+  <section>
+    <h2>6. Angle in a Semicircle</h2>
+    <div class="defn-box">
+      <div class="term">Angle in a Semicircle (Thales' Theorem)</div>
+      <p>The angle inscribed in a semicircle (the angle subtended by the diameter at any point on the circle) is always <strong>90°</strong>.</p>
+      <p>If AB is a diameter and C is any point on the circle (not A or B), then ∠ACB = 90°.</p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Angle Subtended by a Chord</div>
+      <p>The angle subtended by a chord at the centre is <strong>twice</strong> the angle subtended by it at any point on the major arc.</p>
+      <p>∠AOB = 2 × ∠ACB (where O is the centre)</p>
+    </div>
+    <div class="highlight"><strong>Remember:</strong> Equal chords in the same circle subtend equal angles at the centre.</div>
+  </section>
+
+  <section>
+    <h2>7. Alternate Segment Theorem</h2>
+    <div class="defn-box">
+      <div class="term">Alternate Segment Theorem (Tangent-Chord Angle)</div>
+      <p>The angle between a tangent to a circle and a chord drawn from the point of tangency equals the inscribed angle subtending the same arc on the opposite side.</p>
+      <p>If PT is a tangent at T and TC is a chord, then the angle between PT and TC equals the inscribed angle in the alternate segment.</p>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Summary of Circle Theorems</div>
+      1. Tangent ⊥ Radius at point of contact<br>
+      2. Tangents from external point are equal<br>
+      3. Angle in semicircle = 90°<br>
+      4. Central angle = 2 × inscribed angle (same arc)<br>
+      5. Angles in the same segment are equal
+    </div>
+  </section>
+</div>
+</body>
+</html>

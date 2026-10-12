@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 2 – Theory | Numbers and Sequences</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}
+.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:14px}
+h3{font-size:.95rem;font-weight:600;margin-bottom:8px;margin-top:16px}
+p{font-size:.92rem;line-height:1.75;color:var(--text);margin-bottom:10px}
+ul,ol{padding-left:20px;margin-bottom:10px}
+li{font-size:.92rem;line-height:1.75;margin-bottom:3px}
+.defn-box{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.defn-box .term{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:.9rem}
+.defn-box p{margin:0;font-size:.88rem}
+.highlight{background:var(--accent-l);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:.9rem}
+.example-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:10px 0;font-size:.88rem}
+.example-box .ex-label{font-size:.75rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+code{font-family:'JetBrains Mono',monospace;font-size:.88em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+table.def-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:10px 0}
+table.def-table th{background:var(--accent);color:#fff;padding:8px 12px;text-align:left}
+table.def-table th:first-child{border-radius:7px 0 0 0}table.def-table th:last-child{border-radius:0 7px 0 0}
+table.def-table td{padding:8px 12px;border-bottom:1px solid var(--border)}
+table.def-table tr:last-child td{border:none}
+table.def-table tr:nth-child(even) td{background:var(--surface2)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 2</span>
+  <span style="font-size:.85rem;font-weight:600">Numbers and Sequences</span>
+  <div class="sibling-nav">
+    <a class="sn-btn active" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 2 — Numbers and Sequences</h1>
+  <p class="meta">Class 10 · Tamil Nadu Samacheer Kalvi Mathematics</p>
+
+  <section>
+    <h2>1. Euclid's Division Lemma</h2>
+    <div class="defn-box">
+      <div class="term">Euclid's Division Lemma</div>
+      <p>For any two positive integers a and b, there exist unique integers q and r such that:<br>
+      <strong>a = bq + r, where 0 ≤ r &lt; b</strong><br>
+      Here, a is the dividend, b is the divisor, q is the quotient, and r is the remainder.</p>
+    </div>
+    <p>This lemma is the foundation of the Euclidean algorithm used to find the HCF of two numbers.</p>
+    <div class="highlight"><strong>Key Point:</strong> The remainder r always satisfies 0 ≤ r &lt; b (the divisor). If r = 0, then b divides a exactly.</div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Divide 17 by 5: 17 = 5 × 3 + 2<br>
+      Here a = 17, b = 5, q = 3, r = 2. Since 0 ≤ 2 &lt; 5, the lemma is satisfied.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. HCF Using Euclid's Algorithm</h2>
+    <p>Euclid's Algorithm repeatedly applies the Division Lemma to find the <strong>Highest Common Factor (HCF)</strong> of two numbers.</p>
+    <h3>Steps:</h3>
+    <ol>
+      <li>Apply the Division Lemma: a = bq + r.</li>
+      <li>If r = 0, then HCF = b.</li>
+      <li>If r ≠ 0, replace a with b and b with r, then repeat.</li>
+    </ol>
+    <div class="example-box">
+      <div class="ex-label">Step-by-step: HCF(252, 105)</div>
+      Step 1: 252 = 105 × 2 + 42<br>
+      Step 2: 105 = 42 × 2 + 21<br>
+      Step 3: 42 = 21 × 2 + 0<br>
+      Since remainder = 0, <strong>HCF(252, 105) = 21</strong>
+    </div>
+    <div class="highlight">The HCF is always the last non-zero remainder obtained in the Euclidean algorithm.</div>
+  </section>
+
+  <section>
+    <h2>3. LCM and HCF Relationship</h2>
+    <div class="defn-box">
+      <div class="term">LCM × HCF = Product of Two Numbers</div>
+      <p>For any two positive integers a and b:<br>
+      <strong>LCM(a, b) × HCF(a, b) = a × b</strong></p>
+    </div>
+    <p>This property allows us to find the LCM if the HCF and the product of two numbers are known, or vice versa.</p>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      HCF(12, 18) = 6, Product = 12 × 18 = 216<br>
+      LCM = 216 ÷ 6 = <strong>36</strong>
+    </div>
+    <div class="highlight"><strong>Note:</strong> This relationship holds only for <em>two</em> numbers. It does not directly extend to three or more numbers.</div>
+  </section>
+
+  <section>
+    <h2>4. Arithmetic Progression (AP)</h2>
+    <div class="defn-box">
+      <div class="term">Arithmetic Progression</div>
+      <p>A sequence in which each term after the first is obtained by adding a fixed number (called the <strong>common difference</strong>) to the previous term.</p>
+    </div>
+    <table class="def-table">
+      <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><strong>First term (a)</strong></td><td>The first element of the sequence</td></tr>
+        <tr><td><strong>Common difference (d)</strong></td><td>d = a₂ − a₁ = a₃ − a₂ (constant)</td></tr>
+        <tr><td><strong>nth term (aₙ)</strong></td><td>aₙ = a + (n − 1)d</td></tr>
+        <tr><td><strong>Sum of n terms (Sₙ)</strong></td><td>Sₙ = n/2 [2a + (n − 1)d]</td></tr>
+      </tbody>
+    </table>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      AP: 2, 5, 8, 11, … → a = 2, d = 3<br>
+      10th term: a₁₀ = 2 + 9 × 3 = 29<br>
+      Sum of 10 terms: S₁₀ = 10/2 × [4 + 27] = 5 × 31 = 155
+    </div>
+    <div class="highlight">If d &gt; 0, the AP is increasing. If d &lt; 0, it is decreasing. If d = 0, all terms are equal.</div>
+  </section>
+
+  <section>
+    <h2>5. Sum Formulas for Natural Numbers</h2>
+    <p>These are standard results for sums of powers of the first n natural numbers:</p>
+    <div class="defn-box">
+      <div class="term">Sum of first n natural numbers</div>
+      <p><strong>Σn = n(n + 1) / 2</strong></p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Sum of squares of first n natural numbers</div>
+      <p><strong>Σn² = n(n + 1)(2n + 1) / 6</strong></p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Sum of cubes of first n natural numbers</div>
+      <p><strong>Σn³ = [n(n + 1) / 2]²</strong></p>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example — Sum of first 10 natural numbers</div>
+      Σ(1 to 10) n = 10 × 11 / 2 = <strong>55</strong><br>
+      Σ(1 to 10) n² = 10 × 11 × 21 / 6 = <strong>385</strong><br>
+      Σ(1 to 10) n³ = [10 × 11 / 2]² = 55² = <strong>3025</strong>
+    </div>
+    <div class="highlight">Notice that Σn³ = (Σn)². This is a beautiful identity called Nicomachus's theorem.</div>
+  </section>
+
+  <section>
+    <h2>6. Geometric Progression (GP)</h2>
+    <div class="defn-box">
+      <div class="term">Geometric Progression</div>
+      <p>A sequence in which each term after the first is obtained by multiplying the previous term by a fixed non-zero number called the <strong>common ratio</strong>.</p>
+    </div>
+    <table class="def-table">
+      <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><strong>First term (a)</strong></td><td>The first element of the GP</td></tr>
+        <tr><td><strong>Common ratio (r)</strong></td><td>r = a₂/a₁ = a₃/a₂ (constant, r ≠ 0)</td></tr>
+        <tr><td><strong>nth term (aₙ)</strong></td><td>aₙ = a · rⁿ⁻¹</td></tr>
+        <tr><td><strong>Sum of n terms (Sₙ), r ≠ 1</strong></td><td>Sₙ = a(rⁿ − 1) / (r − 1)</td></tr>
+        <tr><td><strong>Sum of n terms, r = 1</strong></td><td>Sₙ = na</td></tr>
+      </tbody>
+    </table>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      GP: 2, 6, 18, 54, … → a = 2, r = 3<br>
+      5th term: a₅ = 2 × 3⁴ = 2 × 81 = 162<br>
+      Sum of 4 terms: S₄ = 2(3⁴ − 1)/(3 − 1) = 2 × 80/2 = 80
+    </div>
+    <div class="highlight">The common ratio r can be found as r = any term ÷ its preceding term.</div>
+  </section>
+
+  <section>
+    <h2>7. Special Sequences</h2>
+    <h3>Triangular Numbers</h3>
+    <p>Numbers that can form a triangular dot pattern: 1, 3, 6, 10, 15, …<br>
+    The nth triangular number = n(n+1)/2</p>
+    <h3>Square Numbers</h3>
+    <p>Perfect squares: 1, 4, 9, 16, 25, …<br>
+    The nth square number = n²</p>
+    <h3>Fibonacci Sequence</h3>
+    <p>A sequence where each term is the sum of the two preceding terms: 1, 1, 2, 3, 5, 8, 13, 21, …</p>
+    <div class="highlight">In a GP, the ratio of any term to the previous term is always equal to the common ratio r. In an AP, the difference of any term from the previous term is always equal to d.</div>
+  </section>
+</div>
+</body>
+</html>

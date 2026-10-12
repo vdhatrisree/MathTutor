@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 6 – Sample Questions | Trigonometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.8;color:var(--text);font-family:'JetBrains Mono',monospace;white-space:pre-wrap}
+.answer.show{display:block}
+.diff-1{border-left:3px solid var(--green)}.diff-2{border-left:3px solid var(--accent)}.diff-3{border-left:3px solid var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 6</span>
+  <span style="font-size:.85rem;font-weight:600">Trigonometry</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 6 — Sample Questions</h1>
+  <p class="meta">Click "Show Answer" · Green = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Ratios &amp; Standard Values</h2>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">If sin θ = 3/5, find cos θ and tan θ.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">sin θ = 3/5 → opposite = 3, hypotenuse = 5
+adjacent = √(5²−3²) = √16 = 4
+cos θ = 4/5
+tan θ = 3/4</div>
+    </div>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">Evaluate: sin²30° + cos²60° + tan²45°</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">sin30° = 1/2 → sin²30° = 1/4
+cos60° = 1/2 → cos²60° = 1/4
+tan45° = 1  → tan²45° = 1
+Total = 1/4 + 1/4 + 1 = 3/2</div>
+    </div>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">Simplify: sin 65° + cos 25°</span><span class="marks">1 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">cos 25° = sin(90°−25°) = sin 65°
+So: sin 65° + sin 65° = 2 sin 65°</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Trigonometric Identities</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">If sec θ + tan θ = 3, find sec θ − tan θ.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Using: sec²θ − tan²θ = 1
+(sec θ + tan θ)(sec θ − tan θ) = 1
+3 × (sec θ − tan θ) = 1
+sec θ − tan θ = 1/3</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">Prove: (sin θ + cosec θ)² + (cos θ + sec θ)² = 7 + tan²θ + cot²θ</span><span class="marks">5 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">LHS = sin²θ + 2sinθ·cosecθ + cosec²θ + cos²θ + 2cosθ·secθ + sec²θ
+= sin²θ + cos²θ + 2(1) + cosec²θ + 2(1) + sec²θ
+= 1 + 2 + cosec²θ + 2 + sec²θ
+= 5 + (1+cot²θ) + (1+tan²θ)
+= 5 + 1 + cot²θ + 1 + tan²θ
+= 7 + tan²θ + cot²θ = RHS ✓</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Prove: tan θ/(1−cot θ) + cot θ/(1−tan θ) = 1 + sec θ · cosec θ</span><span class="marks">5 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Let t = tan θ, so cot θ = 1/t.
+LHS = t/(1−1/t) + (1/t)/(1−t)
+    = t/((t−1)/t) + (1/t)/(1−t)
+    = t²/(t−1) − 1/(t(t−1))
+    = (t³−1) / (t(t−1))
+    = (t−1)(t²+t+1) / (t(t−1))
+    = (t²+t+1)/t
+    = t + 1 + 1/t
+    = tan θ + 1 + cot θ
+    = 1 + sin θ/cos θ + cos θ/sin θ
+    = 1 + (sin²θ + cos²θ)/(sin θ cos θ)
+    = 1 + 1/(sin θ cos θ)
+    = 1 + sec θ · cosec θ = RHS ✓</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Heights &amp; Distances</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">A tower casts a 40 m shadow when the angle of elevation of the sun is 30°. Find the height of the tower.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">tan 30° = height / distance
+1/√3 = h/40
+h = 40/√3 = 40√3/3 ≈ 23.1 m</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">From the top of a cliff 60 m high, the angle of depression of a boat is 45°. Find the distance of the boat from the base of the cliff.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Angle of depression = 45°
+∴ Angle of elevation from boat to cliff top = 45°
+tan 45° = 60/d → 1 = 60/d
+d = 60 m</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">From a point on the ground, the angle of elevation of the top of a tower is 30°. After walking 20 m toward the tower, it becomes 60°. Find the height.</span><span class="marks">5 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Let h = height, d = distance after walking 20 m closer.
+tan 30° = h/(d+20)  → d+20 = h√3   ... (1)
+tan 60° = h/d       → d = h/√3      ... (2)
+Substituting (2) into (1): h/√3 + 20 = h√3
+h√3 − h/√3 = 20
+h(3−1)/√3 = 20 → 2h/√3 = 20
+h = 10√3 ≈ 17.3 m</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">Two buildings are 60 m apart. The angle of elevation of the top of the taller from the base of the shorter is 60°, and vice versa is 30°. Find both heights.</span><span class="marks">5 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Let heights be H (taller) and h (shorter), distance = 60m.
+tan 60° = H/60 → H = 60√3 m
+tan 30° = h/60 → h = 60/√3 = 20√3 m
+Taller building = 60√3 ≈ 103.9 m
+Shorter building = 20√3 ≈ 34.6 m</div>
+    </div>
+  </section>
+</div>
+<script>function toggle(btn){const a=btn.nextElementSibling;a.classList.toggle('show');btn.textContent=a.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';}</script>
+</body>
+</html>

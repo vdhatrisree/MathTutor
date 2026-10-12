@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 8 – Sample Questions | Statistics & Probability</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.8;color:var(--text);font-family:'JetBrains Mono',monospace;white-space:pre-wrap}
+.answer.show{display:block}
+.diff-1{border-left:3px solid var(--green)}.diff-2{border-left:3px solid var(--accent)}.diff-3{border-left:3px solid var(--red)}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:8px 0}
+th,td{border:1px solid var(--border);padding:6px 10px;text-align:center}
+th{background:var(--surface2);font-weight:600}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 8</span>
+  <span style="font-size:.85rem;font-weight:600">Statistics &amp; Probability</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 8 — Sample Questions</h1>
+  <p class="meta">Click "Show Answer" · Green = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Mean of Grouped Data</h2>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">Find the mean of the following data using the direct method:<br><table><tr><th>Class</th><th>0–10</th><th>10–20</th><th>20–30</th><th>30–40</th><th>40–50</th></tr><tr><td>Freq</td><td>5</td><td>8</td><td>15</td><td>12</td><td>10</td></tr></table></span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Midpoints x: 5, 15, 25, 35, 45
+fx: 25, 120, 375, 420, 450
+
+Σf  = 5+8+15+12+10 = 50
+Σfx = 25+120+375+420+450 = 1390
+
+Mean x̄ = Σfx/Σf = 1390/50 = 27.8</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">Use the assumed mean method (A = 30) to find the mean:<br><table><tr><th>Class</th><th>10–20</th><th>20–30</th><th>30–40</th><th>40–50</th><th>50–60</th></tr><tr><td>Freq</td><td>4</td><td>6</td><td>10</td><td>8</td><td>2</td></tr></table></span><span class="marks">4 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">x: 15, 25, 35, 45, 55
+d = x−30: −15, −5, 5, 15, 25
+fd: −60, −30, 50, 120, 50
+
+Σf  = 30
+Σfd = −60−30+50+120+50 = 130
+
+x̄ = A + Σfd/Σf = 30 + 130/30 = 30 + 4.33 ≈ 34.33</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Median of Grouped Data</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">Find the median:<br><table><tr><th>Class</th><th>0–10</th><th>10–20</th><th>20–30</th><th>30–40</th><th>40–50</th></tr><tr><td>Freq</td><td>3</td><td>7</td><td>15</td><td>10</td><td>5</td></tr></table></span><span class="marks">4 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Cumulative frequencies: 3, 10, 25, 35, 40
+n = 40, n/2 = 20
+
+Median class = 20–30 (cf = 10, f = 15)
+L = 20, cf = 10, f = 15, h = 10
+
+Median = L + [(n/2 − cf)/f] × h
+       = 20 + [(20 − 10)/15] × 10
+       = 20 + [10/15] × 10
+       = 20 + 6.67 = 26.67</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mode of Grouped Data</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">Find the mode:<br><table><tr><th>Class</th><th>10–20</th><th>20–30</th><th>30–40</th><th>40–50</th><th>50–60</th></tr><tr><td>Freq</td><td>5</td><td>9</td><td>20</td><td>14</td><td>2</td></tr></table></span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">Modal class = 30–40 (highest frequency = 20)
+L = 30, f₁ = 20, f₀ = 9, f₂ = 14, h = 10
+
+Mode = L + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+     = 30 + [(20−9)/(40−9−14)] × 10
+     = 30 + [11/17] × 10
+     = 30 + 6.47 = 36.47</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Standard Deviation</h2>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">Find the variance and standard deviation of 4, 6, 8, 10, 12.</span><span class="marks">4 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">n = 5
+x̄ = (4+6+8+10+12)/5 = 40/5 = 8
+
+(x−x̄): −4, −2, 0, 2, 4
+(x−x̄)²: 16, 4, 0, 4, 16
+
+Σ(x−x̄)² = 40
+
+Variance σ² = 40/5 = 8
+SD σ = √8 = 2√2 ≈ 2.83</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Find the standard deviation of the grouped data:<br><table><tr><th>Class</th><th>10–20</th><th>20–30</th><th>30–40</th><th>40–50</th></tr><tr><td>Freq</td><td>2</td><td>6</td><td>8</td><td>4</td></tr></table></span><span class="marks">5 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">x: 15, 25, 35, 45
+Σf = 20
+Σfx = 30+150+280+180 = 640
+x̄ = 640/20 = 32
+
+(x−x̄): −17, −7, 3, 13
+(x−x̄)²: 289, 49, 9, 169
+f(x−x̄)²: 578, 294, 72, 676
+
+Σf(x−x̄)² = 1620
+Variance = 1620/20 = 81
+SD σ = √81 = 9</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Probability</h2>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">A die is thrown once. Find the probability of getting (a) an even number (b) a number greater than 4.</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">n(S) = 6
+(a) Even = {2,4,6} → n(A) = 3 → P(A) = 3/6 = 1/2
+(b) >4 = {5,6}     → n(B) = 2 → P(B) = 2/6 = 1/3</div>
+    </div>
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">A card is drawn from a well-shuffled deck of 52 cards. Find P(king) and P(red card).</span><span class="marks">2 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">n(S) = 52
+P(king)     = 4/52 = 1/13
+P(red card) = 26/52 = 1/2</div>
+    </div>
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">Two coins are tossed simultaneously. Find the probability of getting (a) exactly one head (b) at least one head.</span><span class="marks">3 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">S = {HH, HT, TH, TT}, n(S) = 4
+
+(a) Exactly one head = {HT, TH} → P = 2/4 = 1/2
+(b) At least one head = {HH, HT, TH} → P = 3/4
+
+Alternative for (b): P(at least one H) = 1 − P(no heads)
+= 1 − P(TT) = 1 − 1/4 = 3/4</div>
+    </div>
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">P(A) = 1/3, P(B) = 1/4, P(A ∩ B) = 1/12. Find P(A ∪ B) and P(A' ∩ B').</span><span class="marks">4 M</span></div>
+      <button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button>
+      <div class="answer">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+         = 1/3 + 1/4 − 1/12
+         = 4/12 + 3/12 − 1/12 = 6/12 = 1/2
+
+P(A' ∩ B') = P((A ∪ B)')   [De Morgan's Law]
+           = 1 − P(A ∪ B)
+           = 1 − 1/2 = 1/2</div>
+    </div>
+  </section>
+</div>
+<script>function toggle(btn){const a=btn.nextElementSibling;a.classList.toggle('show');btn.textContent=a.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';}</script>
+</body>
+</html>

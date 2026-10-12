@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 5 – Formulas | Coordinate Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+p{font-size:.92rem;line-height:1.75;margin-bottom:10px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.7}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}
+.fc-note b{color:var(--text)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.grid2{grid-template-columns:1fr}}
+code{font-family:'JetBrains Mono',monospace;font-size:.87em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+.highlight{background:var(--accent-l);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../../index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="ch-badge">Chapter 5</span>
+  <span style="font-size:.85rem;font-weight:600">Coordinate Geometry</span>
+  <div class="sibling-nav">
+    <a href="theory.html" class="sn-btn">Theory</a>
+    <a href="formulas.html" class="sn-btn active">Formulas</a>
+    <a href="sample_questions.html" class="sn-btn">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Coordinate Geometry — Formula Sheet</h1>
+  <p class="meta">Class 10 &mdash; Samacheer Kalvi &mdash; Chapter 5 &mdash; All Formulas</p>
+
+  <section>
+    <h2>Distance &amp; Points</h2>
+    <div class="formula-card">
+      <div class="fc-name">Distance Formula</div>
+      <div class="fc-formula">d = √[(x₂ − x₁)² + (y₂ − y₁)²]</div>
+      <div class="fc-note">Distance between points A(x₁, y₁) and B(x₂, y₂).</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Distance from Origin</div>
+      <div class="fc-formula">d = √(x² + y²)</div>
+      <div class="fc-note">Distance of point P(x, y) from origin O(0, 0).</div>
+    </div>
+    <div class="grid2">
+      <div class="formula-card">
+        <div class="fc-name">Midpoint Formula</div>
+        <div class="fc-formula">M = ((x₁+x₂)/2, (y₁+y₂)/2)</div>
+        <div class="fc-note">Midpoint of segment joining (x₁,y₁) and (x₂,y₂).</div>
+      </div>
+      <div class="formula-card">
+        <div class="fc-name">Centroid of Triangle</div>
+        <div class="fc-formula">G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3)</div>
+        <div class="fc-note">Centroid of triangle with vertices (x₁,y₁), (x₂,y₂), (x₃,y₃).</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Section Formula</h2>
+    <div class="formula-card">
+      <div class="fc-name">Internal Division (ratio m : n)</div>
+      <div class="fc-formula">P = ( (mx₂ + nx₁)/(m+n) ,  (my₂ + ny₁)/(m+n) )</div>
+      <div class="fc-note"><b>Point P</b> divides segment AB internally in ratio m : n, where A = (x₁,y₁) and B = (x₂,y₂).</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">External Division (ratio m : n)</div>
+      <div class="fc-formula">P = ( (mx₂ − nx₁)/(m−n) ,  (my₂ − ny₁)/(m−n) )</div>
+      <div class="fc-note"><b>Point P</b> divides segment AB externally in ratio m : n (P lies outside AB). m ≠ n.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Area</h2>
+    <div class="formula-card">
+      <div class="fc-name">Area of Triangle</div>
+      <div class="fc-formula">Area = ½ |x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂)|</div>
+      <div class="fc-note">Vertices: A(x₁,y₁), B(x₂,y₂), C(x₃,y₃). Area = 0 means points are collinear.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Condition for Collinearity</div>
+      <div class="fc-formula">x₁(y₂−y₃) + x₂(y₃−y₁) + x₃(y₁−y₂) = 0</div>
+      <div class="fc-note">Three points are collinear if this expression equals zero.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Slope</h2>
+    <div class="grid2">
+      <div class="formula-card">
+        <div class="fc-name">Slope between Two Points</div>
+        <div class="fc-formula">m = (y₂ − y₁) / (x₂ − x₁)</div>
+        <div class="fc-note">Also written as: <b>m = tan θ</b>, where θ is the inclination angle.</div>
+      </div>
+      <div class="formula-card">
+        <div class="fc-name">Slope from General Form ax+by+c=0</div>
+        <div class="fc-formula">m = −a/b</div>
+        <div class="fc-note">Rearrange to y = (−a/b)x + (−c/b) to identify slope and intercept.</div>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="formula-card">
+        <div class="fc-name">Parallel Lines Condition</div>
+        <div class="fc-formula">m₁ = m₂</div>
+        <div class="fc-note">Lines are parallel if they have equal slopes.</div>
+      </div>
+      <div class="formula-card">
+        <div class="fc-name">Perpendicular Lines Condition</div>
+        <div class="fc-formula">m₁ × m₂ = −1</div>
+        <div class="fc-note">Lines are perpendicular if product of slopes = −1.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Equations of a Line</h2>
+    <div class="formula-card">
+      <div class="fc-name">Slope-Intercept Form</div>
+      <div class="fc-formula">y = mx + c</div>
+      <div class="fc-note"><b>m</b> = slope, <b>c</b> = y-intercept.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Point-Slope Form</div>
+      <div class="fc-formula">y − y₁ = m(x − x₁)</div>
+      <div class="fc-note">Line with slope <b>m</b> passing through point (x₁, y₁).</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Two-Point Form</div>
+      <div class="fc-formula">(y − y₁)/(y₂ − y₁) = (x − x₁)/(x₂ − x₁)</div>
+      <div class="fc-note">Line passing through (x₁,y₁) and (x₂,y₂).</div>
+    </div>
+    <div class="grid2">
+      <div class="formula-card">
+        <div class="fc-name">Intercept Form</div>
+        <div class="fc-formula">x/a + y/b = 1</div>
+        <div class="fc-note"><b>a</b> = x-intercept, <b>b</b> = y-intercept.</div>
+      </div>
+      <div class="formula-card">
+        <div class="fc-name">General Form</div>
+        <div class="fc-formula">ax + by + c = 0</div>
+        <div class="fc-note">Every straight line can be written in this form.</div>
+      </div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Perpendicular Distance from Point to Line</div>
+      <div class="fc-formula">d = |ax₁ + by₁ + c| / √(a² + b²)</div>
+      <div class="fc-note">Distance from point (x₁,y₁) to line ax + by + c = 0.</div>
+    </div>
+  </section>
+
+  <div class="highlight">
+    <strong>Quick Reference:</strong> For any line y = mx + c &nbsp;→&nbsp; slope = m, y-intercept = c, x-intercept = −c/m.<br>
+    Parallel to y = mx + c: any line y = mx + k (k ≠ c). &nbsp;|&nbsp; Perpendicular to y = mx + c: slope = −1/m.
+  </div>
+</div>
+</body>
+</html>

@@ -206,13 +206,15 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-3 relative z-10">
+                <div className="mt-8 pt-6 border-t border-slate-100 relative z-10">
+                  <div className="flex flex-col sm:flex-row gap-3">
                   <Link
                     href={`/chapter/${chapter.slug}/examples`}
                     className="w-full sm:flex-1 inline-flex justify-center items-center bg-slate-50 border border-slate-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 text-slate-700 text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow"
                   >
                     View Examples
                   </Link>
+
                   <Link
                     href={`/chapter/${chapter.slug}/exercises`}
                     className="w-full sm:flex-1 inline-flex justify-center items-center bg-slate-50 border border-slate-200 hover:bg-indigo-600 hover:text-white hover:border-indigo-600 text-slate-700 text-sm font-bold py-3 px-4 rounded-xl transition-all shadow-sm hover:shadow"
@@ -220,6 +222,38 @@ export default function Home() {
                     View Exercises
                   </Link>
                 </div>
+
+                {(
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+                    <a
+                      href={`/unit${index + 1}/theory.html`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex justify-center items-center bg-blue-50 border border-blue-100 hover:bg-blue-600 hover:text-white text-blue-700 text-sm font-bold py-3 px-4 rounded-xl transition-all"
+                    >
+                      Theory
+                    </a>
+
+                    <a
+                      href={`/unit${index + 1}/formulas.html`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex justify-center items-center bg-emerald-50 border border-emerald-100 hover:bg-emerald-600 hover:text-white text-emerald-700 text-sm font-bold py-3 px-4 rounded-xl transition-all"
+                    >
+                      Formulas
+                    </a>
+
+                    <a
+                      href={`/unit${index + 1}/sample_questions.html`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex justify-center items-center bg-purple-50 border border-purple-100 hover:bg-purple-600 hover:text-white text-purple-700 text-sm font-bold py-3 px-4 rounded-xl transition-all"
+                    >
+                      Sample Questions
+                    </a>
+                  </div>
+                )}
+              </div>
               </li>
             ))}
           </ul>

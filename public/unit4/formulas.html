@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 4 – Formulas | Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.6}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}
+.fc-note b{color:var(--text)}
+.tag{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.73rem;font-weight:700;margin-right:4px;margin-bottom:4px}
+.tag-green{background:var(--green-l);color:var(--green)}
+.tag-amber{background:var(--amber-l);color:var(--amber)}
+.tag-red{background:var(--red-l);color:var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 4</span>
+  <span style="font-size:.85rem;font-weight:600">Geometry</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn active" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 4 — Key Formulas</h1>
+  <p class="meta">All formulas needed for exams · Class 10 Samacheer Kalvi</p>
+
+  <section>
+    <h2>Basic Proportionality Theorem (BPT)</h2>
+    <div class="formula-card">
+      <div class="fc-name">BPT (Thales' Theorem)</div>
+      <div class="fc-formula">AD/DB = AE/EC</div>
+      <div class="fc-note">In △ABC, if DE ∥ BC and D is on AB, E is on AC, then AD/DB = AE/EC.<br><b>Converse:</b> If AD/DB = AE/EC, then DE ∥ BC.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">BPT — Alternate Form</div>
+      <div class="fc-formula">AD/AB = AE/AC = DE/BC</div>
+      <div class="fc-note">When DE ∥ BC, the entire side ratios are also equal. This helps find DE if the sides are known.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Similar Triangles</h2>
+    <div class="formula-card">
+      <div class="fc-name">Ratio of Corresponding Sides</div>
+      <div class="fc-formula">AB/DE = BC/EF = CA/FD = k  (if △ABC ~ △DEF)</div>
+      <div class="fc-note">k is the scale factor. All three ratios of corresponding sides are equal.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Ratio of Areas of Similar Triangles</div>
+      <div class="fc-formula">Area(△ABC) / Area(△DEF)  =  k²  =  (AB/DE)²</div>
+      <div class="fc-note">The ratio of areas of similar triangles equals the <b>square</b> of the ratio of their corresponding sides.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">AA Similarity Criterion</div>
+      <div class="fc-formula">∠A = ∠D  AND  ∠B = ∠E  ⟹  △ABC ~ △DEF</div>
+      <div class="fc-note">If two angles of one triangle equal two angles of another, the triangles are similar (the third angle is automatically equal).</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pythagoras Theorem</h2>
+    <div class="formula-card">
+      <div class="fc-name">Pythagoras Theorem</div>
+      <div class="fc-formula">a² + b² = c²</div>
+      <div class="fc-note"><b>c</b> = hypotenuse (side opposite 90°), <b>a</b> and <b>b</b> are the other two sides.<br><b>Example:</b> 3² + 4² = 9 + 16 = 25 = 5²</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Converse of Pythagoras</div>
+      <div class="fc-formula">If c² = a² + b², then ∠C = 90°</div>
+      <div class="fc-note">If the sum of squares of two sides equals the square of the third side, the triangle is right-angled at the vertex opposite the longest side.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tangents to a Circle</h2>
+    <div class="formula-card">
+      <div class="fc-name">Tangent–Radius Perpendicularity</div>
+      <div class="fc-formula">OT ⊥ PT  (tangent at T, centre O)</div>
+      <div class="fc-note">The radius to the point of tangency is always perpendicular to the tangent. This creates a right angle at the point of contact.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Length of Tangent from External Point</div>
+      <div class="fc-formula">t = √(d² − r²)</div>
+      <div class="fc-note"><b>t</b> = tangent length, <b>d</b> = distance from external point to centre, <b>r</b> = radius.<br>Derived from Pythagoras: d² = r² + t²</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Equal Tangents from External Point</div>
+      <div class="fc-formula">PA = PB  (tangents from external point P)</div>
+      <div class="fc-note">The two tangent segments drawn from any external point to a circle are equal in length.<br><span class="tag tag-green">Key theorem</span> Often tested in exams.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Circle Angle Theorems</h2>
+    <div class="formula-card">
+      <div class="fc-name">Angle in a Semicircle</div>
+      <div class="fc-formula">∠ACB = 90°  (AB is diameter, C on circle)</div>
+      <div class="fc-note">Any angle inscribed in a semicircle (subtended by the diameter at the circumference) is a right angle.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Central Angle Theorem</div>
+      <div class="fc-formula">∠AOB = 2 × ∠ACB</div>
+      <div class="fc-note">The angle at the centre is twice the angle at the circumference, both subtended by the same arc.<br><b>A, B</b> are on the circle, <b>O</b> is the centre, <b>C</b> is on the major arc.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Angles in the Same Segment</div>
+      <div class="fc-formula">∠ACB = ∠ADB  (C and D on same arc)</div>
+      <div class="fc-note">Angles inscribed in the same segment (on the same side of the chord) are equal.</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

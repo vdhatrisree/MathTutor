@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 3 – Sample Questions | Algebra</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.q-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.q-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;background:var(--accent-l);color:var(--accent);border-radius:7px;font-size:.8rem;font-weight:800;margin-right:8px;flex-shrink:0}
+.q-head{display:flex;align-items:flex-start;gap:0;margin-bottom:10px}
+.q-text{font-size:.93rem;line-height:1.7;flex:1}
+.marks{font-size:.73rem;font-weight:700;color:var(--text2);background:var(--surface2);border:1px solid var(--border);padding:2px 8px;border-radius:99px;margin-left:auto;flex-shrink:0;margin-top:2px}
+.ans-toggle{margin-top:10px}
+.ans-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-family:inherit;font-size:.8rem;font-weight:600;color:var(--text2);cursor:pointer;transition:all .15s}
+.ans-btn:hover{border-color:var(--accent);color:var(--accent)}
+.answer{display:none;margin-top:12px;background:var(--green-l);border:1.5px solid var(--green);border-radius:8px;padding:14px 16px;font-size:.88rem;line-height:1.75;color:var(--text)}
+.answer.show{display:block}
+.answer b{color:var(--green)}
+code{font-family:'JetBrains Mono',monospace;font-size:.87em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+.diff-1{border-left:3px solid var(--green)}
+.diff-2{border-left:3px solid var(--accent)}
+.diff-3{border-left:3px solid var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 3</span>
+  <span style="font-size:.85rem;font-weight:600">Algebra</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn active" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 3 — Sample Questions</h1>
+  <p class="meta">Click "Show Answer" to reveal the solution · Green border = easy · Blue = medium · Red = hard</p>
+
+  <section>
+    <h2>Remainder &amp; Factor Theorems</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">1</span><span class="q-text">Find the remainder when p(x) = x³ − 2x² + 3 is divided by (x − 1).</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        By the Remainder Theorem, remainder = p(1)<br>
+        p(1) = (1)³ − 2(1)² + 3 = 1 − 2 + 3 = <b>2</b><br>
+        The remainder is 2.
+      </div>
+    </div>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">2</span><span class="q-text">Show that (x − 2) is a factor of p(x) = x³ − 6x² + 11x − 6.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        By the Factor Theorem, (x − 2) is a factor if p(2) = 0.<br>
+        p(2) = (2)³ − 6(2)² + 11(2) − 6<br>
+        p(2) = 8 − 24 + 22 − 6 = 0 ✓<br>
+        <b>Since p(2) = 0, (x − 2) is a factor of p(x).</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quadratic Equations</h2>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">3</span><span class="q-text">Solve x² − 5x + 6 = 0 by factorisation.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Find two numbers whose sum = −5 and product = 6 → (−2) and (−3)<br>
+        x² − 5x + 6 = (x − 2)(x − 3) = 0<br>
+        x − 2 = 0 or x − 3 = 0<br>
+        <b>x = 2 or x = 3</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">4</span><span class="q-text">Solve x² − 4x + 1 = 0 using the quadratic formula.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 1, b = −4, c = 1<br>
+        Discriminant Δ = (−4)² − 4(1)(1) = 16 − 4 = 12<br>
+        x = [−(−4) ± √12] / 2(1)<br>
+        x = [4 ± 2√3] / 2<br>
+        <b>x = 2 + √3 or x = 2 − √3</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-1">
+      <div class="q-head"><span class="q-num">5</span><span class="q-text">Find the sum and product of roots of 2x² − 7x + 3 = 0.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 2, b = −7, c = 3<br>
+        Sum of roots: α + β = −b/a = −(−7)/2 = <b>7/2</b><br>
+        Product of roots: αβ = c/a = 3/2 = <b>3/2</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">6</span><span class="q-text">Form a quadratic equation whose roots are 3 and −5.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        Sum of roots: α + β = 3 + (−5) = −2<br>
+        Product of roots: αβ = 3 × (−5) = −15<br>
+        Quadratic equation: x² − (α + β)x + αβ = 0<br>
+        <b>x² − (−2)x + (−15) = 0 → x² + 2x − 15 = 0</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">7</span><span class="q-text">Find the nature of roots of x² − 6x + 9 = 0.</span><span class="marks">2 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 1, b = −6, c = 9<br>
+        Discriminant Δ = b² − 4ac = (−6)² − 4(1)(9) = 36 − 36 = 0<br>
+        Since Δ = 0, the roots are <b>real and equal</b>.<br>
+        x = −b/2a = 6/2 = <b>3 (repeated root)</b>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Simultaneous Equations</h2>
+
+    <div class="q-card diff-2">
+      <div class="q-head"><span class="q-num">8</span><span class="q-text">Solve the system: 2x + 3y = 12 and x + y = 5.</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        From equation (2): x = 5 − y<br>
+        Substitute into equation (1): 2(5 − y) + 3y = 12<br>
+        10 − 2y + 3y = 12 → y = 2<br>
+        x = 5 − 2 = 3<br>
+        <b>Solution: x = 3, y = 2</b><br>
+        Verify: 2(3) + 3(2) = 6 + 6 = 12 ✓ and 3 + 2 = 5 ✓
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Advanced Problems</h2>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">9</span><span class="q-text">If α and β are roots of 3x² + 5x − 2 = 0, find α² + β².</span><span class="marks">4 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        a = 3, b = 5, c = −2<br>
+        α + β = −b/a = −5/3<br>
+        αβ = c/a = −2/3<br>
+        Using the identity: α² + β² = (α + β)² − 2αβ<br>
+        α² + β² = (−5/3)² − 2(−2/3)<br>
+        α² + β² = 25/9 + 4/3<br>
+        α² + β² = 25/9 + 12/9 = <b>37/9</b>
+      </div>
+    </div>
+
+    <div class="q-card diff-3">
+      <div class="q-head"><span class="q-num">10</span><span class="q-text">Add the matrices A = [[1, 2], [3, 4]] and B = [[5, 6], [7, 8]].</span><span class="marks">3 M</span></div>
+      <div class="ans-toggle"><button class="ans-btn" onclick="toggle(this)">Show Answer ▾</button></div>
+      <div class="answer">
+        To add matrices, add corresponding elements:<br>
+        A + B = [[1+5, 2+6], [3+7, 4+8]]<br>
+        <b>A + B = [[6, 8], [10, 12]]</b><br><br>
+        Written as a matrix: ⎡6   8⎤<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⎣10  12⎦
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+function toggle(btn){
+  const ans=btn.parentElement.nextElementSibling;
+  ans.classList.toggle('show');
+  btn.textContent=ans.classList.contains('show')?'Hide Answer ▴':'Show Answer ▾';
+}
+</script>
+</body>
+</html>

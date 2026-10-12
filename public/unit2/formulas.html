@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 2 – Formulas | Numbers and Sequences</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.6}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}
+.fc-note b{color:var(--text)}
+.tag{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.73rem;font-weight:700;margin-right:4px;margin-bottom:4px}
+.tag-green{background:var(--green-l);color:var(--green)}
+.tag-amber{background:var(--amber-l);color:var(--amber)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 2</span>
+  <span style="font-size:.85rem;font-weight:600">Numbers and Sequences</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn active" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <h1>Chapter 2 — Key Formulas</h1>
+  <p class="meta">All formulas needed for exams · Class 10 Samacheer Kalvi</p>
+
+  <section>
+    <h2>Euclid's Division &amp; HCF/LCM</h2>
+    <div class="formula-card">
+      <div class="fc-name">Euclid's Division Lemma</div>
+      <div class="fc-formula">a = bq + r,  where 0 ≤ r &lt; b</div>
+      <div class="fc-note"><b>a</b> = dividend, <b>b</b> = divisor, <b>q</b> = quotient, <b>r</b> = remainder. The pair (q, r) is unique for every pair (a, b).</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">HCF × LCM = Product of Two Numbers</div>
+      <div class="fc-formula">HCF(a, b) × LCM(a, b) = a × b</div>
+      <div class="fc-note"><b>Use:</b> If HCF and the two numbers are known, find LCM = (a × b) / HCF.<br>Valid only for exactly <b>two</b> positive integers.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Arithmetic Progression (AP)</h2>
+    <div class="formula-card">
+      <div class="fc-name">nth Term of an AP</div>
+      <div class="fc-formula">aₙ = a + (n − 1)d</div>
+      <div class="fc-note"><b>a</b> = first term, <b>d</b> = common difference, <b>n</b> = term number.<br>Common difference: d = a₂ − a₁</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of n Terms of AP (using first term &amp; d)</div>
+      <div class="fc-formula">Sₙ = n/2 × [2a + (n − 1)d]</div>
+      <div class="fc-note">Use when the first term <b>a</b> and common difference <b>d</b> are known.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of n Terms of AP (using first &amp; last term)</div>
+      <div class="fc-formula">Sₙ = n/2 × (a + l)</div>
+      <div class="fc-note"><b>l</b> = last term (nth term). Use when both the first and last term are known.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Geometric Progression (GP)</h2>
+    <div class="formula-card">
+      <div class="fc-name">nth Term of a GP</div>
+      <div class="fc-formula">aₙ = a · rⁿ⁻¹</div>
+      <div class="fc-note"><b>a</b> = first term, <b>r</b> = common ratio (r ≠ 0), <b>n</b> = term number.<br>Common ratio: r = a₂ / a₁</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of n Terms of GP (r ≠ 1)</div>
+      <div class="fc-formula">Sₙ = a(rⁿ − 1) / (r − 1)</div>
+      <div class="fc-note">Use when r ≠ 1. If r &gt; 1, use Sₙ = a(rⁿ − 1)/(r − 1). If r &lt; 1, use Sₙ = a(1 − rⁿ)/(1 − r).</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of n Terms of GP (r = 1)</div>
+      <div class="fc-formula">Sₙ = n · a</div>
+      <div class="fc-note">When r = 1, all terms are equal to a, so the sum is simply na.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Special Sum Formulas</h2>
+    <div class="formula-card">
+      <div class="fc-name">Sum of First n Natural Numbers</div>
+      <div class="fc-formula">1 + 2 + 3 + … + n  =  n(n + 1) / 2</div>
+      <div class="fc-note"><b>Example:</b> Sum of first 100 natural numbers = 100 × 101 / 2 = 5050</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of Squares of First n Natural Numbers</div>
+      <div class="fc-formula">1² + 2² + … + n²  =  n(n + 1)(2n + 1) / 6</div>
+      <div class="fc-note"><b>Example:</b> Σn² for n=5: 5 × 6 × 11 / 6 = 55</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of Cubes of First n Natural Numbers</div>
+      <div class="fc-formula">1³ + 2³ + … + n³  =  [n(n + 1) / 2]²</div>
+      <div class="fc-note"><span class="tag tag-green">Key identity</span> Σn³ = (Σn)². The sum of cubes equals the square of the sum of natural numbers.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Modular Arithmetic</h2>
+    <div class="formula-card">
+      <div class="fc-name">Congruence Modulo m</div>
+      <div class="fc-formula">a ≡ b (mod m)  ⟺  m | (a − b)</div>
+      <div class="fc-note">a is congruent to b modulo m if m divides (a − b).<br><b>Example:</b> 17 ≡ 2 (mod 5) because 5 | (17 − 2) = 15</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Remainder Formula</div>
+      <div class="fc-formula">a mod m  =  r  (the remainder when a is divided by m)</div>
+      <div class="fc-note">The modulo operation gives the remainder. If a = mq + r, then a mod m = r where 0 ≤ r &lt; m.</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

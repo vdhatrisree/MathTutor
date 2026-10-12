@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 3 – Theory | Algebra</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:14px}
+h3{font-size:.95rem;font-weight:600;margin:14px 0 8px}
+p{font-size:.92rem;line-height:1.75;margin-bottom:10px}
+ul,ol{padding-left:20px;margin-bottom:10px}
+li{font-size:.92rem;line-height:1.75;margin-bottom:3px}
+.defn-box{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.defn-box .term{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:.9rem}
+.defn-box p{margin:0;font-size:.88rem}
+.highlight{background:var(--accent-l);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:.9rem}
+.example-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:10px 0;font-size:.88rem;font-family:'JetBrains Mono',monospace;line-height:1.7}
+.example-box .ex-label{font-size:.75rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:'Inter',sans-serif}
+table.t{width:100%;border-collapse:collapse;font-size:.88rem;margin:10px 0}
+table.t th{background:var(--accent);color:#fff;padding:8px 12px;text-align:left}
+table.t th:first-child{border-radius:7px 0 0 0}table.t th:last-child{border-radius:0 7px 0 0}
+table.t td{padding:8px 12px;border-bottom:1px solid var(--border)}
+table.t tr:last-child td{border:none}
+table.t tr:nth-child(even) td{background:var(--surface2)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 3</span>
+  <span style="font-size:.85rem;font-weight:600">Algebra</span>
+  <div class="sibling-nav">
+    <a class="sn-btn active" href="theory.html">Theory</a>
+    <a class="sn-btn" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 3 — Algebra</h1>
+  <p class="meta">Class 10 · Tamil Nadu Samacheer Kalvi Mathematics</p>
+
+  <section>
+    <h2>1. Polynomials</h2>
+    <div class="defn-box"><div class="term">Polynomial</div><p>An expression of the form aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₁x + a₀, where aₙ ≠ 0 and n is a non-negative integer.</p></div>
+    <table class="t">
+      <thead><tr><th>Type</th><th>Degree</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Constant</td><td>0</td><td>7</td></tr>
+        <tr><td>Linear</td><td>1</td><td>3x + 2</td></tr>
+        <tr><td>Quadratic</td><td>2</td><td>x² − 5x + 6</td></tr>
+        <tr><td>Cubic</td><td>3</td><td>x³ − 2x² + x − 1</td></tr>
+      </tbody>
+    </table>
+    <div class="defn-box"><div class="term">Remainder Theorem</div><p>When a polynomial p(x) is divided by (x − a), the remainder is p(a).</p></div>
+    <div class="defn-box"><div class="term">Factor Theorem</div><p>(x − a) is a factor of p(x) if and only if p(a) = 0.</p></div>
+    <div class="example-box"><div class="ex-label">Example</div>Is (x − 2) a factor of x³ − 6x² + 11x − 6?<br>p(2) = 8 − 24 + 22 − 6 = 0  ✓  Yes, it is a factor.</div>
+  </section>
+
+  <section>
+    <h2>2. Simultaneous Linear Equations</h2>
+    <p>Two equations in two unknowns. Solved by:</p>
+    <h3>Elimination Method</h3>
+    <p>Multiply equations to make coefficients of one variable equal, then add or subtract to eliminate it.</p>
+    <h3>Substitution Method</h3>
+    <p>Express one variable in terms of the other from one equation, substitute into the second.</p>
+    <h3>Cross Multiplication</h3>
+    <p>For a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0:</p>
+    <div class="example-box">x/(b₁c₂ − b₂c₁) = y/(c₁a₂ − c₂a₁) = 1/(a₁b₂ − a₂b₁)</div>
+  </section>
+
+  <section>
+    <h2>3. Matrices</h2>
+    <div class="defn-box"><div class="term">Matrix</div><p>A rectangular arrangement of numbers in rows and columns. Order: m × n (m rows, n columns).</p></div>
+    <h3>Types of Matrices</h3>
+    <ul>
+      <li><strong>Row matrix:</strong> Only one row (1 × n)</li>
+      <li><strong>Column matrix:</strong> Only one column (m × 1)</li>
+      <li><strong>Square matrix:</strong> m = n (equal rows and columns)</li>
+      <li><strong>Identity matrix (I):</strong> Square matrix with 1s on diagonal, 0s elsewhere</li>
+      <li><strong>Zero matrix (O):</strong> All elements are 0</li>
+    </ul>
+    <h3>Matrix Operations</h3>
+    <ul>
+      <li><strong>Addition/Subtraction:</strong> Only possible if matrices have the same order. Add/subtract corresponding elements.</li>
+      <li><strong>Scalar Multiplication:</strong> Multiply every element by the scalar.</li>
+      <li><strong>Matrix Multiplication AB:</strong> Possible only if columns of A = rows of B. Result order: (m×n)(n×p) = m×p.</li>
+    </ul>
+    <div class="highlight">AB ≠ BA in general. Matrix multiplication is NOT commutative.</div>
+  </section>
+
+  <section>
+    <h2>4. Quadratic Equations</h2>
+    <div class="defn-box"><div class="term">Standard Form</div><p>ax² + bx + c = 0, where a ≠ 0. The solutions are called roots.</p></div>
+    <h3>Methods of Solving</h3>
+    <ul>
+      <li><strong>Factorisation:</strong> Write ax²+bx+c = a(x−α)(x−β) and solve.</li>
+      <li><strong>Completing the Square:</strong> Rewrite as (x + p)² = q form.</li>
+      <li><strong>Quadratic Formula:</strong> x = [−b ± √(b²−4ac)] / 2a</li>
+    </ul>
+    <h3>Discriminant (Δ = b²−4ac)</h3>
+    <table class="t">
+      <thead><tr><th>Discriminant</th><th>Nature of Roots</th></tr></thead>
+      <tbody>
+        <tr><td>Δ &gt; 0</td><td>Two distinct real roots</td></tr>
+        <tr><td>Δ = 0</td><td>Two equal real roots (repeated root)</td></tr>
+        <tr><td>Δ &lt; 0</td><td>No real roots (imaginary roots)</td></tr>
+      </tbody>
+    </table>
+    <div class="defn-box"><div class="term">Vieta's Formulas (Sum &amp; Product of Roots)</div><p>If α and β are roots of ax²+bx+c=0:<br>Sum: α + β = −b/a<br>Product: αβ = c/a</p></div>
+    <div class="highlight">To form a quadratic from roots: x² − (α+β)x + αβ = 0</div>
+  </section>
+</div>
+</body>
+</html>

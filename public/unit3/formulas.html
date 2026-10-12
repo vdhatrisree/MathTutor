@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 3 – Formulas | Algebra</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.7}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}.fc-note b{color:var(--text)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 3</span>
+  <span style="font-size:.85rem;font-weight:600">Algebra</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn active" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 3 — Key Formulas</h1>
+  <p class="meta">All formulas needed for exams · Class 10 Samacheer Kalvi</p>
+
+  <section>
+    <h2>Polynomials</h2>
+    <div class="formula-card">
+      <div class="fc-name">Remainder Theorem</div>
+      <div class="fc-formula">Remainder = p(a)  when p(x) ÷ (x − a)</div>
+      <div class="fc-note">Substitute x = a directly into the polynomial.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Factor Theorem</div>
+      <div class="fc-formula">(x − a) is a factor of p(x)  ⟺  p(a) = 0</div>
+      <div class="fc-note">If p(a) = 0, then (x − a) divides p(x) exactly.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Quadratic Equations</h2>
+    <div class="formula-card">
+      <div class="fc-name">Quadratic Formula</div>
+      <div class="fc-formula">x = [ −b ± √(b² − 4ac) ] / 2a</div>
+      <div class="fc-note">For ax² + bx + c = 0, a ≠ 0</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Discriminant</div>
+      <div class="fc-formula">Δ = b² − 4ac</div>
+      <div class="fc-note"><b>Δ &gt; 0:</b> Two distinct real roots<br><b>Δ = 0:</b> Equal (repeated) roots<br><b>Δ &lt; 0:</b> No real roots</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Sum of Roots (Vieta's)</div>
+      <div class="fc-formula">α + β = −b / a</div>
+      <div class="fc-note">Sum of both roots of ax² + bx + c = 0</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Product of Roots (Vieta's)</div>
+      <div class="fc-formula">αβ = c / a</div>
+      <div class="fc-note">Product of both roots of ax² + bx + c = 0</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Forming Quadratic from Roots</div>
+      <div class="fc-formula">x² − (α + β)x + αβ = 0</div>
+      <div class="fc-note">Given the roots α and β, this is the quadratic equation.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Matrices</h2>
+    <div class="formula-card">
+      <div class="fc-name">Matrix Addition / Subtraction</div>
+      <div class="fc-formula">(A ± B)ᵢⱼ = aᵢⱼ ± bᵢⱼ</div>
+      <div class="fc-note">Only possible if A and B have the <b>same order</b>.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Scalar Multiplication</div>
+      <div class="fc-formula">(kA)ᵢⱼ = k · aᵢⱼ</div>
+      <div class="fc-note">Multiply every element of A by scalar k.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Matrix Multiplication</div>
+      <div class="fc-formula">(AB)ᵢⱼ = Σₖ aᵢₖ · bₖⱼ</div>
+      <div class="fc-note">A must be m×n and B must be n×p. Result is m×p.<br><b>AB ≠ BA</b> in general.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Identity Matrix Property</div>
+      <div class="fc-formula">AI = IA = A</div>
+      <div class="fc-note">Multiplying by identity matrix gives the same matrix.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Simultaneous Equations (Cross Multiplication)</h2>
+    <div class="formula-card">
+      <div class="fc-name">Cross Multiplication Rule</div>
+      <div class="fc-formula">x/(b₁c₂−b₂c₁) = y/(c₁a₂−c₂a₁) = 1/(a₁b₂−a₂b₁)</div>
+      <div class="fc-note">For the system: a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 5 – Theory | Coordinate Geometry</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--green:#16A34A;--green-l:#DCFCE7;--red:#DC2626;--red-l:#FEE2E2;--amber:#D97706;--amber-l:#FEF3C7;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260;--green:#4ADE80;--green-l:#0A2015;--red:#F87171;--red-l:#2A0A0A;--amber:#FCD34D;--amber-l:#2A1A00}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+h3{font-size:.95rem;font-weight:600;margin-bottom:8px;margin-top:16px}
+p{font-size:.92rem;line-height:1.75;margin-bottom:10px}
+ul,ol{padding-left:20px;margin-bottom:10px}
+li{font-size:.92rem;line-height:1.75;margin-bottom:3px}
+.defn-box{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.defn-box .term{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:.9rem}
+.defn-box p{margin:0;font-size:.88rem}
+.highlight{background:var(--accent-l);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0;font-size:.9rem}
+.example-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:10px 0;font-size:.88rem}
+.example-box .ex-label{font-size:.75rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.7}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}
+.fc-note b{color:var(--text)}
+code{font-family:'JetBrains Mono',monospace;font-size:.87em;background:var(--surface2);padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../../index.html">Home</a>
+  <span class="sep">/</span>
+  <span class="ch-badge">Chapter 5</span>
+  <span style="font-size:.85rem;font-weight:600">Coordinate Geometry</span>
+  <div class="sibling-nav">
+    <a href="theory.html" class="sn-btn active">Theory</a>
+    <a href="formulas.html" class="sn-btn">Formulas</a>
+    <a href="sample_questions.html" class="sn-btn">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Coordinate Geometry</h1>
+  <p class="meta">Class 10 &mdash; Samacheer Kalvi &mdash; Chapter 5 &mdash; Theory Notes</p>
+
+  <section>
+    <h2>1. Coordinate System Recap</h2>
+    <p>A <strong>Cartesian coordinate system</strong> is formed by two perpendicular number lines: the horizontal <strong>x-axis</strong> and the vertical <strong>y-axis</strong>. Their intersection point is called the <strong>origin O(0,0)</strong>.</p>
+    <p>Every point in the plane is represented as an ordered pair <strong>(x, y)</strong>, where <em>x</em> is the horizontal distance (abscissa) and <em>y</em> is the vertical distance (ordinate) from the origin.</p>
+    <div class="defn-box">
+      <div class="term">Quadrants</div>
+      <p>The axes divide the plane into four quadrants:<br>
+      <strong>Quadrant I</strong>: (+, +) &nbsp;|&nbsp; <strong>Quadrant II</strong>: (−, +) &nbsp;|&nbsp; <strong>Quadrant III</strong>: (−, −) &nbsp;|&nbsp; <strong>Quadrant IV</strong>: (+, −)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Distance Formula</h2>
+    <p>The distance between two points A(x₁, y₁) and B(x₂, y₂) in a plane is given by the <strong>Distance Formula</strong>, derived from the Pythagorean theorem.</p>
+    <div class="formula-card">
+      <div class="fc-name">Distance Formula</div>
+      <div class="fc-formula">d = √[(x₂ − x₁)² + (y₂ − y₁)²]</div>
+      <div class="fc-note"><b>Note:</b> The distance is always a non-negative value. When both points lie on the x-axis (y=0), the formula reduces to |x₂ − x₁|.</div>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Distance between A(1, 2) and B(4, 6):<br>
+      d = √[(4−1)² + (6−2)²] = √[9 + 16] = √25 = <strong>5 units</strong>
+    </div>
+    <div class="highlight">
+      <strong>Distance from Origin:</strong> The distance of point P(x, y) from origin O(0,0) is √(x² + y²).
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Section Formula (Internal Division)</h2>
+    <p>If a point P divides the line segment joining A(x₁, y₁) and B(x₂, y₂) <strong>internally</strong> in the ratio m : n, then the coordinates of P are:</p>
+    <div class="formula-card">
+      <div class="fc-name">Section Formula – Internal Division</div>
+      <div class="fc-formula">P = ( (mx₂ + nx₁) / (m + n) ,  (my₂ + ny₁) / (m + n) )</div>
+      <div class="fc-note"><b>m : n</b> is the ratio in which P divides AB from A to B. The point P lies between A and B for internal division.</div>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Point dividing (1, 3) and (7, 9) in ratio 1:2:<br>
+      x = (1×7 + 2×1)/(1+2) = (7+2)/3 = 3 &nbsp;|&nbsp; y = (1×9 + 2×3)/3 = (9+6)/3 = 5<br>
+      <strong>P = (3, 5)</strong>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Midpoint Formula</h2>
+    <p>The midpoint is the point that divides a segment in the ratio 1:1. Substituting m = n = 1 in the section formula gives:</p>
+    <div class="formula-card">
+      <div class="fc-name">Midpoint Formula</div>
+      <div class="fc-formula">M = ( (x₁ + x₂) / 2 ,  (y₁ + y₂) / 2 )</div>
+      <div class="fc-note">The midpoint is equidistant from both endpoints.</div>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Midpoint of (2, 4) and (8, 10):<br>
+      M = ((2+8)/2, (4+10)/2) = (5, 7)
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Area of a Triangle</h2>
+    <p>Given three vertices A(x₁,y₁), B(x₂,y₂), C(x₃,y₃), the area of triangle ABC is:</p>
+    <div class="formula-card">
+      <div class="fc-name">Area of Triangle</div>
+      <div class="fc-formula">Area = ½ |x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|</div>
+      <div class="fc-note">The absolute value ensures area is always positive. If the area = 0, the three points are <b>collinear</b> (lie on the same line).</div>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Area of triangle with A(0,0), B(4,0), C(0,3):<br>
+      = ½ |0(0−3) + 4(3−0) + 0(0−0)| = ½ |0 + 12 + 0| = <strong>6 sq. units</strong>
+    </div>
+    <h3>Centroid of a Triangle</h3>
+    <p>The centroid (point of intersection of medians) is:</p>
+    <div class="formula-card">
+      <div class="fc-name">Centroid</div>
+      <div class="fc-formula">G = ( (x₁+x₂+x₃)/3 ,  (y₁+y₂+y₃)/3 )</div>
+      <div class="fc-note">The centroid divides each median in the ratio 2:1 from vertex to midpoint of opposite side.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Slope of a Line</h2>
+    <p>The <strong>slope</strong> (or gradient) of a line measures its steepness. For a line passing through A(x₁,y₁) and B(x₂,y₂):</p>
+    <div class="formula-card">
+      <div class="fc-name">Slope Formula</div>
+      <div class="fc-formula">m = (y₂ − y₁) / (x₂ − x₁) = tan θ</div>
+      <div class="fc-note"><b>θ</b> is the angle the line makes with the positive x-axis (inclination). The slope is undefined for vertical lines (x₁ = x₂). For horizontal lines, slope = 0.</div>
+    </div>
+    <ul>
+      <li>If θ is acute (0° &lt; θ &lt; 90°), slope is <strong>positive</strong> → line rises left to right.</li>
+      <li>If θ is obtuse (90° &lt; θ &lt; 180°), slope is <strong>negative</strong> → line falls left to right.</li>
+      <li>If θ = 0°, slope = 0 → horizontal line.</li>
+      <li>If θ = 90°, slope is <strong>undefined</strong> → vertical line.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Conditions for Parallel and Perpendicular Lines</h2>
+    <div class="defn-box">
+      <div class="term">Parallel Lines</div>
+      <p>Two lines are parallel if and only if their slopes are equal: <code>m₁ = m₂</code> (and they have different y-intercepts).</p>
+    </div>
+    <div class="defn-box">
+      <div class="term">Perpendicular Lines</div>
+      <p>Two lines are perpendicular if and only if the product of their slopes is −1: <code>m₁ × m₂ = −1</code>, which means <code>m₂ = −1/m₁</code>.</p>
+    </div>
+    <div class="highlight">
+      A horizontal line (slope = 0) is perpendicular to a vertical line (undefined slope). The condition m₁ × m₂ = −1 does not apply in this special case.
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Equation of a Line</h2>
+    <h3>Slope-Intercept Form</h3>
+    <div class="formula-card">
+      <div class="fc-name">Slope-Intercept Form</div>
+      <div class="fc-formula">y = mx + c</div>
+      <div class="fc-note"><b>m</b> = slope of the line, <b>c</b> = y-intercept (where the line crosses the y-axis).</div>
+    </div>
+    <h3>Point-Slope Form</h3>
+    <div class="formula-card">
+      <div class="fc-name">Point-Slope Form</div>
+      <div class="fc-formula">y − y₁ = m(x − x₁)</div>
+      <div class="fc-note">Used when we know the slope <b>m</b> and a point <b>(x₁, y₁)</b> on the line.</div>
+    </div>
+    <h3>Two-Point Form</h3>
+    <div class="formula-card">
+      <div class="fc-name">Two-Point Form</div>
+      <div class="fc-formula">(y − y₁)/(y₂ − y₁) = (x − x₁)/(x₂ − x₁)</div>
+      <div class="fc-note">Used when two points on the line are known. Simplifies to point-slope form after finding the slope.</div>
+    </div>
+    <h3>General Form</h3>
+    <p>Any straight line can be written in the <strong>general form</strong>: <code>ax + by + c = 0</code>, where a, b, c are real constants and a, b are not both zero. The slope is <code>m = −a/b</code> and y-intercept is <code>−c/b</code>.</p>
+  </section>
+
+  <section>
+    <h2>9. Collinearity of Three Points</h2>
+    <p>Three points A, B, C are <strong>collinear</strong> (lie on the same straight line) if and only if the area of the triangle formed by them is zero.</p>
+    <div class="formula-card">
+      <div class="fc-name">Condition for Collinearity</div>
+      <div class="fc-formula">x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂) = 0</div>
+      <div class="fc-note">This is equivalent to saying the slope of AB equals the slope of BC (or AC).</div>
+    </div>
+    <div class="example-box">
+      <div class="ex-label">Example</div>
+      Check if A(1,1), B(2,2), C(3,3) are collinear:<br>
+      Area = ½|1(2−3) + 2(3−1) + 3(1−2)| = ½|−1 + 4 − 3| = ½|0| = <strong>0 → Collinear ✓</strong>
+    </div>
+  </section>
+</div>
+</body>
+</html>

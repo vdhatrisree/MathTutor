@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 7 – Formulas | Mensuration</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F7F8FF;--surface:#fff;--surface2:#F1F3FB;--border:#E0E3F0;--text:#1A1D2E;--text2:#555870;--accent:#4F46E5;--accent-l:#EEF2FF;--accent-m:#C7D2FE;--shadow:0 2px 12px rgba(79,70,229,.09)}
+@media(prefers-color-scheme:dark){:root{--bg:#0D0F1E;--surface:#161926;--surface2:#1C1F30;--border:#252840;--text:#E6E8FA;--text2:#8890B0;--accent:#818CF8;--accent-l:#1A1D38;--accent-m:#2D3260}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--text2);text-decoration:none;font-size:.82rem;font-weight:500}.topbar a:hover{color:var(--accent)}
+.sep{color:var(--border)}.ch-badge{background:var(--accent-l);color:var(--accent);font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.sibling-nav{display:flex;gap:8px;margin-left:auto}
+.sn-btn{padding:6px 14px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;font-weight:600;text-decoration:none;color:var(--text2);transition:all .15s}
+.sn-btn:hover{background:var(--accent-l);border-color:var(--accent-m);color:var(--accent)}
+.sn-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:32px 24px 60px}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:4px}
+.meta{color:var(--text2);font-size:.86rem;margin-bottom:28px}
+section{margin-bottom:36px}
+h2{font-size:1.05rem;font-weight:700;color:var(--accent);border-left:3px solid var(--accent);padding-left:12px;margin-bottom:16px}
+.formula-card{background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.fc-name{font-size:.78rem;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.fc-formula{font-family:'JetBrains Mono',monospace;font-size:1.0rem;font-weight:600;color:var(--accent);background:var(--accent-l);padding:10px 14px;border-radius:8px;margin-bottom:8px;line-height:1.9}
+.fc-note{font-size:.83rem;color:var(--text2);line-height:1.6}.fc-note b{color:var(--text)}
+
+.solid-art{width:190px;max-width:100%;height:150px;flex:0 0 190px;align-self:center;background:var(--accent-l);border:1px solid var(--accent-m);border-radius:12px;padding:6px}
+@media(max-width:560px){.solid-art{width:100%;height:160px;flex-basis:100%}.shape-card{align-items:center}}
+.formula-card{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.formula-card>div{flex:1;min-width:220px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <a href="../index.html">← All Chapters</a><span class="sep">›</span>
+  <span class="ch-badge">Chapter 7</span>
+  <span style="font-size:.85rem;font-weight:600">Mensuration</span>
+  <div class="sibling-nav">
+    <a class="sn-btn" href="theory.html">Theory</a>
+    <a class="sn-btn active" href="formulas.html">Formulas</a>
+    <a class="sn-btn" href="sample_questions.html">Questions</a>
+  </div>
+</div>
+<div class="wrap">
+  <h1>Chapter 7 — Key Formulas</h1>
+  <p class="meta">All mensuration formulas · Class 10 Samacheer Kalvi · Use π = 22/7</p>
+
+  <section>
+    <h2>Cylinder</h2>
+    <div class="formula-card"><svg class="solid-art" viewBox="0 0 220 170" role="img" aria-label="Cylinder" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818CF8"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/></linearGradient>
+      <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D2FE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+    </defs><ellipse cx="105" cy="43" rx="48" ry="17" fill="#C7D2FE" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M57 43 V119 C57 129 78 137 105 137 S153 129 153 119 V43" fill="url(#side)" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M57 119 C57 129 78 137 105 137 S153 129 153 119" fill="none" stroke="#4338CA" stroke-width="1.6"/>
+        <ellipse cx="105" cy="43" rx="48" ry="17" fill="url(#light)" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M105 43 L153 43" stroke="#4F46E5" stroke-dasharray="3 3"/><path d="M166 44 V119 M161 49 L166 43 L171 49 M161 114 L166 120 L171 114" fill="none" stroke="#555870" stroke-width="1.4"/>
+        <text x="174" y="84" font-size="11" fill="#555870">h</text><text x="126" y="37" font-size="11" fill="#4338CA">r</text></svg>
+      <div class="fc-name">Cylinder — r = radius, h = height</div>
+      <div class="fc-formula">CSA = 2πrh
+TSA = 2πr(r + h)
+Volume = πr²h</div>
+    </div>
+  </section>
+  <section>
+    <h2>Cone</h2>
+    <div class="formula-card"><svg class="solid-art" viewBox="0 0 220 170" role="img" aria-label="Cone" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818CF8"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/></linearGradient>
+      <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D2FE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+    </defs><path d="M105 20 L55 119 Q105 150 155 119 Z" fill="url(#side)" stroke="#4F46E5" stroke-width="1.6"/>
+        <ellipse cx="105" cy="119" rx="50" ry="18" fill="url(#light)" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M105 20 L105 119" stroke="#EEF2FF" stroke-dasharray="4 4" stroke-width="1.5"/>
+        <path d="M105 119 L155 119" stroke="#4338CA" stroke-width="1.4"/><text x="112" y="75" font-size="11" fill="#fff">h</text><text x="132" y="111" font-size="11" fill="#4338CA">r</text>
+        <path d="M105 20 L155 119" stroke="#E0E7FF" stroke-width="1.4"/><text x="139" y="65" font-size="11" fill="#fff">l</text></svg>
+      <div class="fc-name">Cone — r = base radius, h = height, l = slant height</div>
+      <div class="fc-formula">Slant height: l = √(r² + h²)
+CSA = πrl
+TSA = πr(r + l)
+Volume = (1/3)πr²h</div>
+      <div class="fc-note"><b>Remember:</b> Volume of cone = (1/3) × Volume of cylinder with same r and h</div>
+    </div>
+  </section>
+  <section>
+    <h2>Sphere</h2>
+    <div class="formula-card"><svg class="solid-art" viewBox="0 0 220 170" role="img" aria-label="Sphere" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818CF8"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/></linearGradient>
+      <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D2FE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+    </defs><circle cx="105" cy="83" r="52" fill="url(#ball)" stroke="#4F46E5" stroke-width="1.6"/>
+        <ellipse cx="105" cy="83" rx="52" ry="17" fill="none" stroke="#E0E7FF" stroke-width="1.4" opacity=".9"/>
+        <path d="M105 83 L157 83" stroke="#fff" stroke-width="1.7"/><circle cx="105" cy="83" r="2.8" fill="#fff"/><text x="130" y="76" font-size="11" fill="#fff">r</text></svg>
+      <div class="fc-name">Sphere — r = radius</div>
+      <div class="fc-formula">Surface Area = 4πr²
+Volume = (4/3)πr³</div>
+    </div>
+  </section>
+  <section>
+    <h2>Hemisphere</h2>
+    <div class="formula-card"><svg class="solid-art" viewBox="0 0 220 170" role="img" aria-label="Hemisphere" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818CF8"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/></linearGradient>
+      <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D2FE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+    </defs><path d="M53 91 A52 52 0 0 1 157 91 Z" fill="url(#ball)" stroke="#4F46E5" stroke-width="1.6"/>
+        <ellipse cx="105" cy="91" rx="52" ry="18" fill="url(#light)" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M105 91 H157" stroke="#4338CA" stroke-width="1.5"/><text x="130" y="83" font-size="11" fill="#4338CA">r</text></svg>
+      <div class="fc-name">Hemisphere — r = radius</div>
+      <div class="fc-formula">CSA (curved only) = 2πr²
+TSA (curved + flat base) = 3πr²
+Volume = (2/3)πr³</div>
+      <div class="fc-note">Volume of hemisphere = (1/2) × Volume of sphere</div>
+    </div>
+  </section>
+  <section>
+    <h2>Frustum (Truncated Cone)</h2>
+    <div class="formula-card"><svg class="solid-art" viewBox="0 0 220 170" role="img" aria-label="Frustum" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#818CF8"/><stop offset=".55" stop-color="#6366F1"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+      <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0E7FF"/><stop offset="1" stop-color="#A5B4FC"/></linearGradient>
+      <linearGradient id="ball" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C7D2FE"/><stop offset=".48" stop-color="#818CF8"/><stop offset="1" stop-color="#4338CA"/></linearGradient>
+    </defs><path d="M77 40 L55 119 Q105 139 155 119 L133 40 Z" fill="url(#side)" stroke="#4F46E5" stroke-width="1.6"/>
+        <ellipse cx="105" cy="40" rx="28" ry="11" fill="url(#light)" stroke="#4F46E5" stroke-width="1.6"/>
+        <ellipse cx="105" cy="119" rx="50" ry="18" fill="url(#light)" stroke="#4F46E5" stroke-width="1.6"/>
+        <path d="M105 40 H133 M105 119 H155" stroke="#4338CA" stroke-dasharray="3 3"/><text x="138" y="37" font-size="11" fill="#4338CA">r</text><text x="160" y="121" font-size="11" fill="#4338CA">R</text><text x="165" y="82" font-size="11" fill="#555870">h</text></svg>
+      <div class="fc-name">Frustum — R = bottom radius, r = top radius, h = height</div>
+      <div class="fc-formula">Slant height: l = √(h² + (R − r)²)
+CSA = π(R + r)l
+TSA = π(R + r)l + πR² + πr²
+Volume = (πh/3)(R² + r² + Rr)</div>
+    </div>
+  </section>
+  <section>
+    <h2>Volume Conservation</h2>
+    <div class="formula-card">
+      <div class="fc-name">When a solid is melted and recast</div>
+      <div class="fc-formula">Volume (original) = Volume (new shape)</div>
+      <div class="fc-note">The total volume does not change. Use this to find unknown dimensions of the new shape.</div>
+    </div>
+    <div class="formula-card">
+      <div class="fc-name">Number of small spheres from big sphere</div>
+      <div class="fc-formula">n = (R/r)³</div>
+      <div class="fc-note">n = number of small spheres of radius r formed from big sphere of radius R.</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
